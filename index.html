@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#efe6d3">
+<meta name="description" content="Ein Wurf, ein Ort auf der Welt: seine Bilder, ein paar Sätze, das nächste Radio. Alles aus offenen Archiven, nichts erfunden.">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Weltwurf">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAD80lEQVR42u3dS27cMBBFUZvQMJOMshivIfBaA68h+8qggUbQP7etD1+R546MALGl4tVjiWKrX3/8/PUC3KIpAcgBcoAcIAfIAXKAHCAHyAFyAOQAOUAOkAPkADlADpAD5AA5AHKAHCAHdmBRgjO///45/fDx9q4akgPkADlADpAD5AA5QA6QA+TA1LxO+06w82L5M8y5oD6RHF+ygSvjy7GhEBOKMqYczzhxPagPnsp+7xdWZ5lHizWDd/F/b/6V0z+OpMgyvBZ7jNb5d17/0ZEUWUbV4pjhuWfJGIosg2nRazxuWlJdkYUWe1gyhiJtADM+3t7TSn99SAfcVJPjhhmxh1rdj0rrHIW0GOPIm/qKkNrJ8X81S98f1jqRpqC9IiQ/Pxoz+FFSjvHMqOVHbs8xwydXw8+xqVpChGTmR0s2YyoCz7ol12iG3XjJ/UdjBj+K9Ryz7fbOPN+gu5WKTei2OwfSKtBiq5yvxb2dpOvPJaQaLc2MErHx6eB9b3TTmo+snmMMM7bygxzFJpQvHe3KU+temaDk8ILHtDq0kAtxpAllw8mlb3h4BQMi5fDG4PDwkBzIk0Ns5IeH5Nj3PqK0+n3kmHPHRrmKtXLXYqEDXn92fetjWtlrwAbopTrIMcCc8unA72HG8XVr+ZdgrB83j3/zj/x3rJKv8ZrXbz0H6shh7WtNPh3cdkgOkAPkADkwnBy60Vo9qeQAOUAOkAPkQFe2/JT9+kbaXUxUDSUHyIG+08rzmWn6KFE9yQFygBwgB8iBeeQIf9W3WxXJAXKAHCAHJpBDT1qlG5UcIAfKyWFmCa9SBzk8r69SN9MKUuUwsyTXp48cZpYSFTOtIE8Oq2HPzym9glZyIFIO4ZEcG5IDwXIIj9jYyEoOfqTVob8c1jxiK9NcNCoQLUfa13QnmJEQqCnJYXIJrEbiN1LPGR6BryBo4ZXSapBj6uYjrdXITY7Z/Ig1I3RambM5DTzrFl6pscMj/D1Yh74TbKTIneHUop/Kjtp/VJE+/ZH9eH4UisMC+zlG8qPWRBndc9wra8UWpOLxl5HjgPrud+9Q1OxK30h9qum50KcfwgtdOvDq7SG9qG9yF1J9Kiy5wfjajzRFrg+p4jrN8lKTiykmZ5a51rTu8l1VOR4rcvyQ3Iyu6qu6teW4p8hhltybzsZY7B9BjgeK7GTJgxZnpGdA48jxWJGV9w7PNLzj7TSotAi27SW+060TOWYXZZLtSBPJscaVOTenzSvHA118iOaEVzCAHCAHyAFygBwgB8gBcmB4rJBCcoAcIAfIAXKAHCAHyAFygBwAOUAOkAPkADlADpAD5AA5QA6AHCAHyAFy4FD+AbNl4Jgl6QnoAAAAAElFTkSuQmCC">
+<link rel="manifest" href='data:application/manifest+json,{"name":"Weltwurf","short_name":"Weltwurf","display":"standalone","background_color":"%23efe6d3","theme_color":"%23efe6d3","icons":[{"src":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAIAAAB7GkOtAAALfklEQVR42u3dS3IaSxBA0UbBkAkjFsMaCNZKsAb25YEjFBjJtNSf6srMc8bv+QNdeSuRbO8Ox9MAQD0fXgIAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAAEAAAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAAEAAAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAAEAAAhmHYewko5fK4vf8P7uerVwkbAAACAIAAACAAAAgAAAIAgAAAIAAACAAAAgCAAAAgAAAIAAACAIAAACAAAAgAAAIAgAAAIAAACAAAAgAgAAAIAAACAIAAACAAAAgAAAIAgAAA0Lnd4XjyKpDS5XFb5Me5n69eTAQA0k55bUAAwKxXBQQATHw9QADA0BcDBAAMfTFAAMDcVwIEAMx9JUAAwNxXAgQAzH0lQAAw91ECBACjf8uhOfrL+/p/df47gsn2XgJCz/0GM/HNT9H4d/350ykBAkC50d/b4NtqXfj7s8gAAkDy0R9rzD3/atd+fWQAASDb6E8z0V5+Iyu9aDKAABB+9KcfYZ+/wTVeQxlAAAg2+msOrPU+JpIBBIDeR78JtepaIAMIAN2NfiOpZQlkAAHA6A9ZAhlAAIg9/c2dThaCy+PmvUAAMPqLLgRWAQSAdUe/+dL5QiADPPvwErDI9L+fr8ZKmxLMf539Xa3YAFhs9HsZN1kI5rx3VgFsAKb/rOnv1h99G7AK2AAw+t36624DVgEbAKa/W3/pbcAqIACY/i7+GbYBDeCHfARk9Bv9CRsw7b32cZANANP/daCYCBEzMPldswrU4R+FN/3d+r373n0BwOF3/j0GHgMBwNUPz4PnIT1fA3DanfYqpr25viRgAyD/9Df6PR4eDwHAxR/PieekBB8BOdVOdUU+DsIGYK83+j02HhsbAI4xVgF7gABg+qMBGlCBj4DKTX+jH88SNgAnFmY9HvYAAcD0RwMQAEx/NAABwPRHA+icLwInn/5GPx42bAAOJKy7CtgDBADTHw1AADD90QAEANMfDUAAMP3RAAQA0x8NQABofDjBY4YAJLn+O5Z02ABLgABg+qMBCACmPxqAAGD6owEIAAACgOs/lgAEwPQ3/dEABMD0N/3RAAQA0x+PJQJQ8/rvmBG9AZYAAcCRwAPPxvyTkJEOg+t/8echxAPgeQ5k7yVItl+T+BLw/J91+zzcz1cXfBsAS55809/+F+vB8GCH4GsAgQ8/0d/9+Q/AIj+IIyAA9MstSfvDjVEPrQBgR6bRvI7bAEvAhnwNwPQn9ujv/JnxqNsAgEZXXRdqBMD1H7rggyABIPwiT6CLeW/D1MMsALjpeNM9Zo6GABgEbkze9GLz1AdBAoB9GQ82AuAmiDfdI+eYCABuSXi8EQA3QbzpHjyHRQDcj8BDjgC4CYIjgwC4GYFHHQHIdZdxJNxhS92mf/LAWwIEAAABcP2HRCwBAgCAALj+gyXAEiAAAAiA6z9YAiwBAgCAALj+gyUAAYDAc63arwQBwJkEx0EAkrKugmMlAAAIgHuKhbeeHt7oKA+bLwULAAAC4FaIt7vYw+ZoCEBsVlRwxAQA2Phi60KNAJgFVHzfgz5pDogAWE7RAGPUQRMAIwAcEwQAjDYDFAGwlhK4AesN6FV/cMdNAHAvo9OHIdMD5rAIAGiAiYkAWEhJ2oD5g7vOxz4OnQC47iEDJUa/I9PG3ksAXc27N3dbYxEBsIpiX2S4PG5eq5l8BAQgALjQgYMjAAAIAO/4AgA4gAKANRYcHwEAQAAAEICEfP4IjqEAACAAPPElLHCIBAAAAQBAAELzpSdwGAWA7/nsEhwlAQBAAAAQAAAEAAABAEAAejb6bWe+bwEWNHqgfCeoAAAgAAAIAAACAIAAAAiAlwBAAAAQAAAEgBf+FBi058+CCQAAAgCAAAAgAAAIAAACAMBXu8PxlO93FfobwnwXKVk5mDYAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAIBxOf8qiFX5F8HA0bMBACAAAAgAAAIAgAAAIADRjX6nQeh/9QL65FuABAAAAQBAAAAQAAAEAAABAEAAABAAAAHgt/xZMGjJnwITAAAEAAABAEAAABAAAARgK74RCBwlAcjJt52BwygAAAgAAALA4LNLcIgEAAABSMWXnsAxFAAABAAAAWDwJSxwfAQgK58/ggMoAAAIANZYcHAEAAABSMunkODoCQAAAsC/fJoJjowAWEUBh04AABAAKy3gsAiAhRRw3AQAAAGw2IJjggBYS8FBQwDcbsABQQAAEADLKThiCIAlFxwNBAAAAdh+RXXTgQmHwuc/AgCAAEReAgDHSgAsvOA4OA4CAIAAVFhX3Xpg8OVfAQBAACwB4Prv+i8AAAiAJQBc/xEAAATAEgCu/wgAAAJgCQDXfwQg3ZEAjzoCkHAJABwZAXAzAg85AuBGAw4LAuB+BB5vBMC9BhwTBMAtCTzYCECm242jQs3p7/ovABoAjgYC4MYEHmYEoOBNx7GhzvR3/RcAAATAEmAJwPUfAdAArxWmPwLgIIGHFgGotASAI4AA1D0A7lPku/6b/gKAnRoPKgJgCXC0KDP9Xf8FAIcBDzwC4Ej4YgA1rv+mvwDQYssGjyUCkG0vdtgIOv1d/wUADcD0RwDQAEx/BAAAAbAEWAJw/UcANEADMP0RAA3QAEx/BEADNADTHwFAA/CYIQDFlwCHk66mv+u/AKABmP4IABqA6Y8AoAGY/ggAGoDpjwCgAZj+NLQ7HE9ehdzH0snEM4YNoOgeYBXA9EcANABMfwRAA8D0FwAvgQaA6V+TLwJXPLeOLh4hbABF9wCrAKY/AqABmP6mf10+Aqp+mJ1nT4unxQZA0T3AKmD6m/42AOz1zrbHw+MhALji4anwVBTgI6C0fByE6Y8NwJkfHHuPgccAAXD+HX7vvncfATAFSg6C0dch0+/Xm857vgZQxeQjfXncfGEg4ug3/Rm19xJUa8C0ufD3/zIaEt/6vb82AKwCaw0XTH8EgPANkIE+R7/pz2/5CKh0AyaPDJ8I5bj1exNtAFgFbAMVb/2mPzYADZi1CtgGIt76vV/YAFhyHNgGotz6TX9sACy/Cjz/70ZMb1d+7wsCQIsMDD4XMvoRAOJmYJG5YyHYfO57/REANlsFLARGPwKADFgI2s19LzICQI8ZUIJV575XFQEgQAZefrQ6Y2u975c1+hEAgmWgyFqw6p+TMPoRAMJn4OsPG3e0tfmTcUY/AkC2DHw7Rvsfdi3/OLTRjwBQIgP/G6/bDsGt/vYLox8BoLsMtJ+Jb366paZkP3/HkbnPsvyj8KS6GqfvKwgASmDugwCgBOY+CABKYO6DAKAE5j4IAEpg7oMAIAaGPggAYmDoIwACgB6Y+AgAqIJZjwCANpjyCABUqoJxTx0fXgIAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAAEAAAAQBAAAAQAAAEAAABAEAAAAhrdzievAoANgAABAAAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAEAAABAAAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAEAAABAAAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAAEAAABAAAAQBAAAAQAAAEAAABAEAAABAAAAQAAAEAQAAAivoDuPQOEngFySQAAAAASUVORK5CYII=","sizes":"512x512","type":"image/png"}]}'>
+<title>Weltwurf</title>
+<style>
+:root{
+  --nacht:#0c1117;      /* Hintergrund */
+  --tafel:#131b25;      /* Paneele */
+  --linie:#26374a;      /* Rahmen, Linien */
+  --schrift:#dde8f0;    /* Haupttext, kühles Grau */
+  --signal:#59d6c8;     /* Phosphor — Signalfarbe der Nachtseite */
+  --neben:#93a9b8;      /* Nebentext */
+  --papier:#efe6d3;     /* QSL-Karte */
+  --tinte:#2b2620;      /* Schrift auf Papier */
+  --tinteHell:#6f6455;  /* Nebentext auf Papier */
+  --stempel:#b23a24;    /* Poststempel-Rot */
+  --luftpost:#2e5aa8;   /* Luftpost-Blau */
+  --papierLinie:#cdc0a4;
+  --karteBg:#f8f0df; --feld:#e6dbc4; --rahmen:#ded1b6;
+  --druck:#fbf7ee; --druckRand:#d8ccb0; --skelett:#e2d6bd;
+  --punktLeer:#cfc2a4; --btnRand:#b6a988; --leise:#a2937c;
+  --gruen:#14695f; --gradTop:#f6eedd;
+  --schatten:rgba(43,38,32,.2); --hauch:rgba(178,58,36,.07); --stempelSchein:rgba(178,58,36,.4);
+  --mono:"SF Mono",ui-monospace,Menlo,Consolas,monospace;
+  --serif:Georgia,"Times New Roman",serif;
+}
+/* Nach 20 Uhr wird das Papier zur Nachtausgabe — gleiche Post, andere Stunde */
+html[data-modus="nacht"]{
+  --papier:#0c1117; --gradTop:#121a24;
+  --karteBg:#131b25; --feld:#182330; --rahmen:#26374a;
+  --tinte:#dde8f0; --tinteHell:#8ea3b3;
+  --papierLinie:#2c3b4e; --druck:#182330; --druckRand:#2c3b4e;
+  --skelett:#1a2532; --punktLeer:#3a4c60; --btnRand:#3a4c60; --leise:#5d7181;
+  --stempel:#e06a4f; --luftpost:#5b83c9; --gruen:#59d6c8;
+  --schatten:rgba(0,0,0,.5); --hauch:rgba(224,106,79,.08); --stempelSchein:rgba(224,106,79,.4);
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+button,[role=button]{touch-action:manipulation;-webkit-user-select:none;user-select:none}
+button:focus-visible,[role=button]:focus-visible{outline:2px solid var(--stempel);outline-offset:2px}
+html,body{height:100%}
+body{
+  background:var(--papier);
+  background-image:radial-gradient(ellipse at 50% -10%, var(--gradTop) 0%, var(--papier) 60%);
+  color:var(--tinte);
+  font-family:var(--serif);
+  -webkit-font-smoothing:antialiased;
+  padding:max(16px,env(safe-area-inset-top)) 16px 110px;
+  max-width:520px;margin:0 auto;
+}
+header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:10px;border-bottom:2px solid var(--tinte)}
+h1{font-size:15px;letter-spacing:.35em;font-weight:700;text-transform:uppercase;color:var(--tinte)}
+#kopfRechts{display:flex;align-items:baseline;gap:14px}
+#hoerort{font-family:var(--mono);font-size:11px;color:var(--tinteHell);white-space:nowrap}
+#logBtn{
+  font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--stempel);background:none;border:none;cursor:pointer;padding:2px 0;
+}
+
+/* ---- Einführung ---- */
+#intro{margin:56px 8px 0;color:var(--tinteHell);font-size:17px;line-height:1.85;text-align:center}
+#intro b{color:var(--tinte);font-weight:400}
+#intro .leise{display:block;margin-top:18px;font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--leise)}
+
+/* ---- Suchlauf: das Nachtfenster ---- */
+#ticker{display:none;margin:40px 0 32px;text-align:center;font-family:var(--mono);cursor:pointer;-webkit-user-select:none;user-select:none;padding:12px 0}
+#ticker.an{display:block}
+#suchKarte{width:100%;border:4px solid var(--rahmen);border-radius:2px;image-rendering:pixelated;background:var(--nacht);box-shadow:0 8px 26px var(--schatten)}
+#tickerZahl{font-size:15px;letter-spacing:.06em;line-height:1.4;margin-top:10px;font-variant-numeric:tabular-nums;color:var(--tinte)}
+#tickerZahl small{display:block;font-size:11px;color:var(--tinteHell);letter-spacing:.25em;margin-top:8px;text-transform:uppercase}
+#ticker.rastet #tickerZahl{color:var(--stempel)}
+
+/* ---- Ergebnis: die QSL-Karte — der Fund als Objekt im Nachtäther ---- */
+#karte{
+  margin-top:22px;display:none;position:relative;
+  background:var(--karteBg);color:var(--tinte);
+  border:1px solid var(--papierLinie);border-radius:3px;padding:24px 16px 16px;
+  box-shadow:0 10px 30px var(--schatten);
+}
+#karte::before{ /* Luftpost-Rand — die Karte kommt von weit her */
+  content:"";position:absolute;top:0;left:0;right:0;height:8px;border-radius:3px 3px 0 0;
+  background:repeating-linear-gradient(-45deg,
+    var(--stempel) 0 11px, var(--karteBg) 11px 22px,
+    var(--luftpost) 22px 33px, var(--karteBg) 33px 44px);
+}
+#ortTyp{
+  display:inline-block;font-family:var(--mono);font-size:12px;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--stempel);border:2px solid var(--stempel);border-radius:3px;
+  padding:5px 10px 4px;margin-bottom:12px;transform:rotate(-2deg);opacity:0;
+}
+#ortTyp.da{animation:stempel .32s cubic-bezier(.2,1.5,.4,1) forwards}
+@keyframes stempel{
+  0%{opacity:0;transform:rotate(-9deg) scale(1.8)}
+  100%{opacity:1;transform:rotate(-2deg) scale(1)}
+}
+#ortName{font-size:clamp(28px,9vw,40px);line-height:1.12;font-weight:700;min-height:40px;overflow-wrap:break-word;color:var(--tinte)}
+#ortLand{font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--tinteHell);margin-top:6px}
+#kennung{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.kMarke{font-family:var(--mono);font-size:11px;color:var(--tinte);background:var(--feld);border:1px solid var(--papierLinie);border-radius:2px;padding:3px 8px}
+#ortMeta{font-family:var(--mono);font-size:12px;color:var(--tinteHell);margin-top:12px;letter-spacing:.05em;line-height:1.8}
+#ortMeta b{color:var(--stempel);font-weight:400}
+
+#wurfKarte{display:none;width:100%;border:4px solid var(--rahmen);border-radius:2px;margin-top:14px;image-rendering:pixelated;background:var(--nacht)}
+
+#hoerBtn{
+  display:none;width:100%;font-family:var(--mono);font-size:13px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--stempel);background:transparent;border:2px solid var(--stempel);border-radius:3px;
+  padding:13px;margin-top:16px;cursor:pointer;
+}
+#hoerBtn.an{display:block;animation:stempelPuls 2.6s ease-in-out infinite}
+#hoerBtn:active{background:var(--hauch)}
+@keyframes stempelPuls{50%{box-shadow:0 0 20px var(--stempelSchein)}}
+#empfang.zu{display:none}
+
+#radioZeile{
+  margin-top:16px;display:flex;align-items:center;gap:10px;
+  border:1px solid var(--papierLinie);border-radius:2px;padding:12px;background:var(--feld);
+  font-family:var(--mono);font-size:14px;
+}
+#radioPunkt{width:8px;height:8px;border-radius:50%;background:var(--papierLinie);flex:none}
+#radioPunkt.sucht{background:var(--tinteHell);animation:puls .7s ease-in-out infinite}
+#radioPunkt.an{background:var(--signal);box-shadow:0 0 8px var(--signal);animation:puls 2.6s ease-in-out infinite}
+@keyframes puls{50%{opacity:.4}}
+#radioName{flex:1;color:var(--tinte)}
+#radioDist{color:var(--tinteHell);flex:none;font-size:12px}
+#favBtn{display:none;flex:none;background:none;border:none;color:var(--stempel);font-size:19px;line-height:1;cursor:pointer;padding:2px 4px}
+#favBtn.an{display:block}
+#senderInfo{font-family:var(--mono);font-size:12px;color:var(--tinteHell);margin:6px 2px 0;letter-spacing:.04em}
+.poesieLink{font-family:var(--mono);font-size:10px;color:var(--gruen);text-decoration:none;letter-spacing:.1em;text-transform:uppercase}
+#klarHinweis{display:none;font-family:var(--mono);font-size:10px;color:var(--tinteHell);letter-spacing:.15em;text-transform:uppercase;margin:5px 2px 0;text-align:right}
+#klarHinweis.an{display:block}
+
+#shazamBtn{
+  display:none;font-family:var(--mono);font-size:13px;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--gruen);text-decoration:none;border:1px solid var(--papierLinie);border-radius:2px;
+  padding:8px 14px;margin-top:10px;text-align:center;
+}
+#shazamBtn.an{display:block}
+#shazamBtn:active{background:var(--hauch)}
+
+#funk{display:none;margin-top:16px}
+#funk.an{display:block}
+#funkKopf{font-family:var(--mono);font-size:11px;color:var(--tinteHell);letter-spacing:.25em;text-transform:uppercase;margin-bottom:6px}
+.funkEintrag{
+  display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:14px;
+  border:1px solid var(--papierLinie);border-radius:2px;padding:9px 12px;margin-bottom:6px;
+  background:transparent;color:var(--tinte);cursor:pointer;
+}
+.funkEintrag:active{background:var(--hauch)}
+.funkEintrag.aktiv{border-color:var(--stempel);color:var(--stempel)}
+.funkEintrag .fName{flex:1}
+.funkEintrag .fDist{color:var(--tinteHell);flex:none;font-size:12px}
+
+/* ---- Skelett (Ladezustand) ---- */
+.skFoto{aspect-ratio:3/2;background:var(--feld);border:1px solid var(--papierLinie);border-radius:2px;animation:skPuls 1.3s ease-in-out infinite}
+.skLinie{height:13px;background:var(--feld);border-radius:2px;margin:10px 0;animation:skPuls 1.3s ease-in-out infinite}
+.skLinie.kurz{width:60%}
+@keyframes skPuls{50%{opacity:.45}}
+
+/* ---- Galerie ---- */
+#galerie{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:8px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+#galerie::-webkit-scrollbar{display:none}
+.dia{flex:0 0 100%;scroll-snap-align:center;scroll-snap-stop:always}
+.dia .foto{margin:0}
+.diaText{font-family:var(--mono);font-size:11px;color:var(--tinteHell);margin-top:5px;padding:0 2px;letter-spacing:.04em}
+#punkte{display:flex;justify-content:center;gap:9px;margin-top:8px}
+#punkte i{width:7px;height:7px;border-radius:50%;background:var(--punktLeer)}
+#punkte i.hier{background:var(--stempel)}
+
+/* ---- Strecke ---- */
+#strecke{margin-top:20px}
+.kapitel{margin-bottom:22px;opacity:0;transform:translateY(8px);transition:opacity .7s,transform .7s}
+.kapitel.da{opacity:1;transform:none}
+.foto{border:1px solid var(--druckRand);padding:7px;background:var(--druck);border-radius:2px}
+.foto img{width:100%;display:block;aspect-ratio:3/2;object-fit:contain;filter:saturate(.92);border-radius:1px;background:#101822}
+.tele{font-family:var(--mono);margin:9px 2px 0}
+.teleKopf{font-size:11px;color:var(--stempel);letter-spacing:.25em;text-transform:uppercase;margin-bottom:5px}
+.teleKopf b{color:var(--stempel);font-weight:400}
+.teleText{font-size:16px;line-height:1.7;color:var(--tinte);white-space:pre-wrap}
+.teleText .cursor{display:inline-block;width:7px;height:13px;background:var(--stempel);margin-left:2px;vertical-align:-2px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+#fotoQuelle{font-family:var(--mono);font-size:10px;color:var(--tinteHell);text-align:right;margin:2px 2px 4px}
+
+#postBtn{
+  display:none;width:100%;font-family:var(--mono);font-size:13px;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--tinte);background:none;border:1px solid var(--btnRand);border-radius:2px;
+  padding:11px;margin-top:14px;cursor:pointer;
+}
+#postBtn.an{display:block}
+#postBtn:active{color:var(--stempel);border-color:var(--stempel)}
+
+/* ---- Logbuch ---- */
+#logbuch{display:none;margin-top:18px}
+#logbuch.an{display:block}
+#fundKarte{width:100%;border:4px solid var(--rahmen);border-radius:2px;margin-bottom:10px;image-rendering:pixelated;background:var(--nacht)}
+#qsl{display:flex;flex-wrap:wrap;gap:6px;padding:10px 0 4px}
+.qslMarke{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--stempel);border:1.5px solid var(--stempel);border-radius:3px;padding:4px 8px;transform:rotate(-2deg)}
+#qsl .qslMarke:nth-child(even){transform:rotate(1.5deg)}
+#logSumme{font-family:var(--mono);font-size:11px;color:var(--tinteHell);letter-spacing:.15em;text-transform:uppercase;padding:4px 2px 12px;border-bottom:1px solid var(--papierLinie)}
+.logEintrag{border-bottom:1px solid var(--papierLinie);padding:11px 2px;cursor:pointer}
+.logEintrag:active{background:var(--hauch)}
+.logName{font-size:19px;color:var(--tinte)}
+.logMeta{font-family:var(--mono);font-size:12px;color:var(--tinteHell);margin-top:3px;letter-spacing:.05em}
+#logLeer{font-family:var(--mono);font-size:12px;color:var(--tinteHell);padding:24px 0;text-align:center}
+
+/* ---- Frequenz-Sammlung: gesternte Sender ---- */
+#favKopf{font-family:var(--mono);font-size:11px;color:var(--stempel);letter-spacing:.25em;text-transform:uppercase;margin:26px 0 8px}
+.favEintrag{display:flex;align-items:center;gap:10px;border:1px solid var(--papierLinie);border-radius:2px;padding:10px 12px;margin-bottom:6px;cursor:pointer;background:var(--karteBg)}
+.favEintrag.aktiv{border-color:var(--stempel)}
+.fvPlay{font-family:var(--mono);font-size:13px;color:var(--stempel);flex:none;width:18px;text-align:center}
+.fvText{flex:1;min-width:0}
+.fvName{display:block;font-size:15px;color:var(--tinte);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fvOrt{display:block;font-family:var(--mono);font-size:11px;color:var(--tinteHell);margin-top:2px}
+.fvWeg{flex:none;background:none;border:none;color:var(--tinteHell);font-size:15px;cursor:pointer;padding:4px 6px}
+
+/* ---- Wurf-Knopf: immer einen Daumen entfernt ---- */
+#wurfLeiste{
+  position:fixed;left:0;right:0;bottom:0;padding:10px 16px max(14px,env(safe-area-inset-bottom));
+  background:linear-gradient(to top, var(--papier) 65%, rgba(239,230,211,0));
+  max-width:520px;margin:0 auto;
+  pointer-events:none;              /* Tipps gehen durch — nur der Knopf fängt */
+}
+#wurfLeiste #wurfBtn{pointer-events:auto}
+#wurfBtn{
+  display:block;width:100%;padding:15px;
+  background:var(--karteBg);border:2px solid var(--stempel);color:var(--stempel);
+  font-family:var(--mono);font-size:13px;letter-spacing:.3em;text-transform:uppercase;
+  border-radius:3px;cursor:pointer;box-shadow:0 6px 20px var(--schatten);
+}
+#wurfBtn:active{background:var(--hauch)}
+#wurfBtn.lockt{animation:lockt 2.6s ease-in-out infinite}
+@keyframes lockt{50%{box-shadow:0 0 22px var(--stempelSchein)}}
+#wurfBtn:disabled{border-color:var(--papierLinie);color:var(--papierLinie);cursor:default}
+@media (hover:hover){
+  #wurfBtn:not(:disabled):hover,.funkEintrag:hover,#postBtn:hover,#shazamBtn:hover{background:var(--hauch)}
+  .logEintrag:hover,.favEintrag:hover{background:var(--hauch)}
+  #logBtn:hover,#wissenBtn:hover,.poesieLink:hover{text-decoration:underline}
+}
+#wissen{display:none;margin-top:24px;border:1px solid var(--papierLinie);border-radius:2px;padding:14px;background:var(--karteBg)}
+#wissen.an{display:block}
+.wBlock{font-size:14px;line-height:1.65;color:var(--tinteHell);margin-bottom:14px}
+.wBlock:last-child{margin-bottom:0}
+.wKopf{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--stempel);margin-bottom:4px}
+#wissenBtn{color:var(--stempel);cursor:pointer}
+footer{margin-top:10px;font-family:var(--mono);font-size:9px;color:var(--leise);text-align:center;letter-spacing:.05em}
+
+/* ---- Auf dem Papier: alles, was auf der QSL-Karte lebt ---- */
+#karte #radioZeile{background:var(--feld);border-color:var(--papierLinie)}
+#karte #radioName{color:var(--tinte)}
+#karte #radioDist,#karte #senderInfo,#karte #klarHinweis,#karte #funkKopf,#karte .diaText,#karte #fotoQuelle{color:var(--tinteHell)}
+#karte #shazamBtn{color:var(--gruen);border-color:var(--papierLinie)}
+#karte .funkEintrag{border-color:var(--papierLinie);color:var(--tinte)}
+#karte .funkEintrag .fDist{color:var(--tinteHell)}
+#karte .funkEintrag.aktiv{border-color:var(--stempel);color:var(--stempel)}
+#karte .skFoto,#karte .skLinie{background:var(--skelett);border-color:var(--papierLinie)}
+#karte .foto{background:var(--druck);border-color:var(--druckRand);padding:7px}
+#karte #punkte i{background:var(--punktLeer)}
+#karte #punkte i.hier{background:var(--stempel)}
+#karte .teleKopf{color:var(--stempel)}
+#karte .teleKopf b{color:var(--stempel)}
+#karte .teleText{color:var(--tinte)}
+#karte .teleText .cursor{background:var(--stempel)}
+#karte .poesieLink{color:var(--gruen)}
+#karte #postBtn{color:var(--tinte);border-color:var(--btnRand)}
+#karte #postBtn:active{color:var(--stempel);border-color:var(--stempel)}
+#karte button:focus-visible,#karte [role=button]:focus-visible{outline-color:var(--stempel)}
+@media (hover:hover){
+  #hoerBtn:hover{background:var(--hauch)}
+  #karte .funkEintrag:hover,#karte #postBtn:hover,#karte #shazamBtn:hover{background:var(--hauch)}
+}
+@media (prefers-reduced-motion: reduce){
+  #radioPunkt.an,#radioPunkt.sucht,.teleText .cursor,#wurfBtn.lockt,#hoerBtn.an,.skFoto,.skLinie{animation:none}
+  #ortTyp.da{animation:none;opacity:1}
+  .kapitel{transition:none}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Weltwurf</h1>
+  <div id="kopfRechts">
+    <div id="hoerort"></div>
+    <button id="logBtn">Logbuch</button>
+  </div>
+</header>
+
+<div id="intro">
+  Wohin wirft es dich heute?
+  Ein Tipp auf <b>Wurf</b> schickt den Suchlauf über die Weltkarte — ein zweiter, und du landest: bei einem Bergsee, einer Geisterstadt, einem Dorf am Ende einer Straße.
+  Weltwurf erzählt dir, was du gefunden hast, zeigt es dir in Bildern — und wenn du willst, hörst du dazu <b>das nächste Radio der Gegend</b>.
+  Jeder Fund wird eine QSL-Karte in deinem Logbuch, jeder gute Sender wandert in deine Frequenz-Sammlung.
+  <span class="leise">Nichts ist erfunden — alles aus offenen Archiven und echten Sendern.</span>
+</div>
+
+<div id="ticker">
+  <canvas id="suchKarte" aria-hidden="true"></canvas>
+  <div id="tickerZahl"></div>
+</div>
+
+<div id="karte">
+  <div id="ortTyp"></div>
+  <div id="ortName"></div>
+  <div id="ortLand"></div>
+  <div id="kennung"></div>
+  <div id="ortMeta"></div>
+  <canvas id="wurfKarte" aria-hidden="true"></canvas>
+  <button id="hoerBtn">Wie klingt dieser Ort?</button>
+  <div id="empfang" class="zu">
+    <div id="radioZeile">
+      <div id="radioPunkt"></div>
+      <div id="radioName" aria-live="polite">—</div>
+      <div id="radioDist"></div>
+      <button id="favBtn" aria-label="Sender in die Frequenz-Sammlung">☆</button>
+    </div>
+    <div id="senderInfo"></div>
+    <div id="klarHinweis">Zeile antippen = sofort klarer Empfang</div>
+    <a id="shazamBtn" href="#">Shazam — Lied erkennen</a>
+    <div id="funk">
+      <div id="funkKopf">Funkverkehr der Gegend</div>
+      <div id="funkListe"></div>
+    </div>
+  </div>
+  <div id="strecke"></div>
+  <div id="fotoQuelle"></div>
+  <button id="postBtn">Flaschenpost — diesen Fund teilen</button>
+</div>
+
+<div id="logbuch"></div>
+
+<div id="wurfLeiste"><button id="wurfBtn" class="lockt">Wurf</button></div>
+<div id="wissen">
+  <div class="wBlock"><div class="wKopf">Warum morst es?</div>
+  Bei jeder Ankunft funkt der Empfänger die Koordinaten des Orts in Morsezeichen — so, wie Küstenfunkstellen ein Jahrhundert lang Positionen übermittelt haben. Punkt kurz, Strich lang: N ist –·, S ist ···.</div>
+  <div class="wBlock"><div class="wKopf">Die Millisekunden</div>
+  Die Zahl unter der Distanz ist echte Physik: So lange bräuchte ein Funksignal mit Lichtgeschwindigkeit von dort bis zu dir. 8.000 km sind 27 Millisekunden — jede Ferne ist auch eine kleine Zeitreise.</div>
+  <div class="wBlock"><div class="wKopf">Kurzwelle &amp; Funkverkehr</div>
+  Sender mit KW sind Kurzwellendienste — Signale, die nachts an der Ionosphäre um die halbe Welt springen. FUNK sind echte Scanner: Feuerwehr, Flugfunk, Marine. Und taucht "Poesie der Gegend" auf, hat Wikisource ein gemeinfreies Gedicht mit dem Ortsnamen gefunden — eine Rarität.</div>
+</div>
+<footer><span id="wissenBtn">Über den Äther</span> · Daten: OpenStreetMap · Wikipedia · Wikidata · Wikimedia Commons · Radio-Browser</footer>
+
+<audio id="radio" preload="none" playsinline></audio>
+
+<script>
+"use strict";
+const $ = id => document.getElementById(id);
+const MOEDLING = {lat:48.086, lon:16.283};
+const VISITED_KEY = "weltwurf_visited_v3";
+const SENDER_KEY = "weltwurf_sender";
+let hoerer=null, audio=$("radio");
+let actx=null, noiseGain=null, hetOsc=null, hetGain=null, morseGain=null, morseOsc=null;
+let tickerTimer=null, teleAbbruch=null, wurfNr=0, fadeTimer=null;
+let aktuellesRadio=null, aktuellerOrt=null, letzterLogKey=null;
+let tickerKoord=null, wurfLaeuft=false, hatGeworfen=false, volRampe=null, schlafTimer=null, reconnects=0;
+let wartenderEmpfang=null;   // Sender & Funk liegen bereit, bis der Hörer selbst tunt
+let spieltJetzt=null;        // was gerade läuft — für den Favoriten-Stern
+
+/* ---------- Hilfen ---------- */
+function haversine(a,b){
+  const R=6371, r=x=>x*Math.PI/180;
+  const dLat=r(b.lat-a.lat), dLon=r(b.lon-a.lon);
+  const h=Math.sin(dLat/2)**2 + Math.cos(r(a.lat))*Math.cos(r(b.lat))*Math.sin(dLon/2)**2;
+  return 2*R*Math.asin(Math.sqrt(h));
+}
+const pause = ms => new Promise(r=>setTimeout(r,ms));
+function fetchMitLimit(url, opts, ms){
+  const halt=new AbortController();
+  const t=setTimeout(()=>halt.abort(), ms||8000);
+  return fetch(url, Object.assign({}, opts||{}, {signal:halt.signal})).finally(()=>clearTimeout(t));
+}
+function fmt(n){ return Math.round(n).toLocaleString("de-AT"); }
+function mische(arr){
+  for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]];}
+  return arr;
+}
+function koordText(p){
+  return Math.abs(p.lat).toFixed(3)+"° "+(p.lat>=0?"N":"S")+" / "
+       + Math.abs(p.lon).toFixed(3)+"° "+(p.lon>=0?"O":"W");
+}
+function koordFest(p){
+  const la=Math.abs(p.lat).toFixed(3).padStart(7,"0")+"° "+(p.lat>=0?"N":"S");
+  const lo=Math.abs(p.lon).toFixed(3).padStart(7,"0")+"° "+(p.lon>=0?"O":"W");
+  return la+"\n"+lo;   // zwei Zeilen — bricht auf keinem Display mehr um
+}
+function alsKnopf(el){
+  // Klickbare Divs auch für Tastatur & Screenreader — Enter/Leertaste lösen aus
+  el.setAttribute("role","button"); el.tabIndex=0;
+  el.addEventListener("keydown", ev=>{
+    if(ev.key==="Enter"||ev.key===" "){ ev.preventDefault(); el.click(); }
+  });
+}
+
+/* ---------- Logbuch-Speicher ---------- */
+function besucht(){ try{ return JSON.parse(localStorage.getItem(VISITED_KEY)||"[]"); }catch(e){ return []; } }
+function besuchtKeys(){ return besucht().map(e=>typeof e==="string"?e:e.k); }
+function merkeBesuch(ort, dist){
+  const v=besucht();
+  const e={k:ort.name+"|"+ort.cc, name:ort.name, typ:ort.typ||"", region:ort.region, land:ort.land, cc:ort.cc,
+           lat:ort.lat, lon:ort.lon, dist:Math.round(dist), datum:new Date().toISOString().slice(0,10), sender:""};
+  v.push(e); letzterLogKey=e.k;
+  try{ localStorage.setItem(VISITED_KEY, JSON.stringify(v.slice(-500))); }catch(e2){}
+}
+function logTyp(typ){
+  if(!letzterLogKey || !typ) return;
+  const v=besucht();
+  for(let i=v.length-1;i>=0;i--){
+    if(typeof v[i]!=="string" && v[i].k===letzterLogKey){ v[i].typ=typ; break; }
+  }
+  try{ localStorage.setItem(VISITED_KEY, JSON.stringify(v)); }catch(e){}
+}
+function logSender(name){
+  if(!letzterLogKey) return;
+  const v=besucht();
+  for(let i=v.length-1;i>=0;i--){
+    if(typeof v[i]!=="string" && v[i].k===letzterLogKey){ v[i].sender=name; break; }
+  }
+  try{ localStorage.setItem(VISITED_KEY, JSON.stringify(v)); }catch(e){}
+}
+function gespielteSender(){ try{ return JSON.parse(localStorage.getItem(SENDER_KEY)||"[]"); }catch(e){ return []; } }
+const FAV_KEY="weltwurf_favoriten_v1";
+function favoriten(){ try{ return JSON.parse(localStorage.getItem(FAV_KEY)||"[]"); }catch(e){ return []; } }
+function favSpeichern(v){ try{ localStorage.setItem(FAV_KEY, JSON.stringify(v.slice(-200))); }catch(e){} }
+function istFav(uuid){ return favoriten().some(f=>f.uuid===uuid); }
+function zeigeFavStern(){
+  const b=$("favBtn");
+  if(!spieltJetzt || !spieltJetzt.uuid){ b.classList.remove("an"); return; }
+  b.classList.add("an");
+  b.textContent=istFav(spieltJetzt.uuid) ? "★" : "☆";
+}
+function merkeSender(uuid){
+  const v=gespielteSender(); v.push(uuid);
+  try{ localStorage.setItem(SENDER_KEY, JSON.stringify(v.slice(-25))); }catch(e){}
+}
+
+/* ---------- Land-Maske (Natural Earth, 0,5°-Raster) ---------- */
+const LAND_B64 = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+//9/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+P////8HAAAA8P//////PwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+//////8HAAA+/P///x8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP7//////wf4////////////D/I/AAAAAAAAAAAAAAAAAAAAAAAgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQPD//////wf8////////////+/9/AAAAAAAAAAAAAAAAAAAAIABEAgAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/sP/////f/D///////////////8BAAAAAAAAAAAAAAAAAADgPZAQAgEAAIAAAAD+DwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA//8B/P//B/7//////////////wMAAAAAAAAAAPj/HwACAADgC0RKAAAAAAAAAAD/PwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC///7////AOD//////////////w8AAAAAAADAxw//HwAAAAAAIAAAAAAAAAIAAAD9/wEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAA4P/P//8AAPz//////////////wMAAAAAAADA//8BAAAAAAAAAAAAAAAAAAAAAADw/zgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHgH948P/8//8A+P///////////////wEAAAAAAADA//8AIAIAAAAAAAAAAAAAAAAAAAAAAP4DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPr4AQ78///A/////////////////wMAAAAAAAAA/j88AAAAAAAAAAAAAAAAAAAAAAAAAP9QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOgPABCADwDv/w8A/v///////////////xEAAAAAAAAA4A/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfwAAIAAAAAj//wEA4f///////////////wMAAAAAAAAA8AcAAAAAAAAAAAAAAAAAAAAAAAQAAfBHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgfwggAEDA/+n//w8A+P//////////////PwAAAAAAAAAAAAAAAAAAAAAAAAAAAPABAAAAAAAABPw/AAEAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Ax/wAPsf4AMAQAAAwP//////////////fwQAAAAAAAAAAAAAAAAAAAAAAAAA/P8AAAAAAACA8v///wMAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAgyP/jD/hfxB8ADgIAAAAA/v///////////wEAAAAAAAAAAAAAAAAAAAAAAADg/wEAAAAAAAD+/////w8AAAAAgPj/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4P//j8CPj////wAAAAAA+P///////////wkAAAAAAAAAAAAAAAAAAAAAAAD+BwAAAAAIAP7//////wcAAAAAAPz/8QMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAHAAAQD/7//wAAAAAA4P///////////wAAAAAAAAAAAAAAAAAAAAAAAAD/AAAAAAAA4P//////fwAAAAAAAOAAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAMD/AAAAAAAAAAAAAAAAAAAAwP//////////PwAAAAAAAAAAAEAAAAAAAAAAAMAfAAAAAABg4v//////BwIAAAAAgAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAAAIAI/gcIgAAAAAAAAP//////////fwAAAAAAAAAAAAAAAAAAAAAAAPgHAAAAgAD4/////////wMAAAEAAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAID/fwIAeOBf/8HHnz8AAAAAAP7/////////AQAAAAAAAAAAAAAAAAAAAAAAAPgDAAAgEAH+//////////+/wP8AAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAMD/5/cYH7g/P/DvfwAAAAAAAP3/////////BwAAAAAAAAAAAAAAAAAAAAAAAP4AAAD8YUD+//////////////8DAAAfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOD/+f9/P+B/DvD/f/4BAAAAAPz///////9/AAAAAAAAAAAAAAAAAAAAAAAAAH4AAAD8Q/j8//////////////8DAID//wMAAAAAAAAAAAAAAAAAAAAAAAAAAOB//P9/PwB/DvD///8PAAAAAP7/////////BwAAAAAAAAAAAAAAAAAAAAAAgH8AAAD/cP////////////////8DAYj//w8AAAAAAAAAHwAAAADAAAAAAAAAAAAegP//fwCAP/D/////AQAAAND////////fDwAAgAAAAAAAAAAACAAAAAAAAP4BAMD/+P7///////////////+H/////38AAAAAAADAAAAAAAD+9wAAAAAAAAAA8P///4GA/+D/////DwAAAHj///////8/DwAAAAAAAAAAAACg/w8AAAAAAPAHAPD/8f//////////////////////////PwIAAAAAAAAAAPD///8AAAAAgAMAAOD//w+A/wH8/////wAAAPj///////8HAAAAAAAAAAAAAIDC/x8AAAAAAABAAMD/8////////////////////////////wAAAAAAAAAAAPz/////HwIA/08cwP///z88fgDgoej//wEAAPj/////////AQAAAAAAAAAAAOD//78BAAAAAAAABsD/+f//////////////////////////fwAA8v8BAAAAAP7//////wf/////A/3//6f++Q/gH6T//wMAAAD8//////8/AAAAAAAAAAAAAPT///8fAAAABAAA/gP/8f//////////////////////////////4f8/AQAA+P///////////////+MfSJAA+HfgPwD/fwAAAAD+//////8DAAAAAAAAAAAAoPz/////BwAAABgg/h/8w///////////////////////////////9///HwAA+P///////////////wegPwD4+P/0DwLw/wMAAMD//////x8AAAAAAAAAAAAAiP//////fwAPwMf////+5///////////////////////////////////fwAAgP///////////////w8//4/////4H8DL/38AAOD/////PwAAAAAAAAAAAAAA4v///////wE//P//////w////////////////////////////////////wMAAP//////////////////////////H8CB//8EAPD/////HwAAAAAAAAAAAAAA8P///////wMH////////8f////////////////////////////////////sBAPj/////////////////////////BwDg//8PAOD/////DwAAAAAAAAAAAAAA+P///////yPO////////+P////////////////////////////////////8H+PH///////////////////////8PAgDw//gPAOD/////AQAADsAHAAAAAAAA/f////8P/Hj//////////v///////////////////////////////////P8H//////////////////////////9HAQDw/+ADAMD///8vAAAA//8HAAAAAACA//8f/v8/AP7/////////////////////////////////////////////AX8A/P/////////////////////////zAPD//4EBAID///8AAAAA8P8PAAAAAACA//8H+v+/AP//////////////////////////////////////////////AHwA+N/////////////////////////xB/j//w8AAAD//38AAAAA/v8HAAAAAADA//8H/v8/Hv7///////////////////////////////////////////9/AAAAAMD////////////////////////4HxDg/z8AAAD//38AAAAA8P8BAAAAAADw//+D//9//P////////////////////////////////////////////8PAAAAAMD//////////////////////wf8+FAA/z8AAAD+/z8AAAAAwB8AAAAAAAD+///g//////////////////////////////////////////////////8fAAB4APz//////////////////////wcgABAA/3wAAAD8/x8AAAAAAAAAAAAAAID//z/8//////////////////////////////////////////////////8/AAAAwP///////////////////////wAADgAI/CMAAAD4/wcAAAAAAAAAAAAAAOD//w/8//////////////////////////////////////////////////9/AAAA4P//////////////////////PwAAA/EZgEcAAADw/wcAAAAAAAAAAA4AAPj//wf4/////////////////////////////////////////////z/+//8BAAAA8P//////////////////////PwAAAPH/ACAAAADg/wcAAAAAAAAAAAQAAPz//wf4////////////////////////////////////////////vx///x8AAAAA4P//////////////////////DwAAAPD/AQAAAADA/wMAAAAAAAAAAAAAAP7//wP4////////////////////////////////////////////gYf//wMAAAAA4P////74////////////////BwAAAPj/HwAAAAAA+AMAAAAAAAAAAABgAPz//wf8//////////////////////////////////////////9/AMH/fwAAAEAAnP//f//r////////////////BwAAAOD/n0AAAAAAwAEAAAAAAAAAAAAgAPz//5/6B/7///////////////////////////////////////8/APj/GAAAAAAAAPD/Px+AwP//////////////BwAAgOD/H+AAAAAAAAAAAAAAAAAAAAAAAPj//z8AAP7///////////////////////////////////////8PAHwCAAAAAAAAAPD/DwIAAP7/////////////BwAAAPD/P/ABAAAAAAAAAAAAAAAAAAAGAPjv/x+A////////////////////////////////////////waM/AD8AAAAAAAAAAHDenwAAAPj/////////////PwAAAPj/f/gDAAAAAAAAAAAAAAAAAAAGAPjD/wPg//////////////////////////////////////8HAAAAgB8BAAAAAAAAAADgTwAAAMD/////////////PwAAAOD///8HAAAAAAAAAAAAAAAAAOQBAOCA/wEQ/v////////////////////////////////////8DAAAA4A8AAAAAAAAAAADgcQAAAAD5////////////fwAAAMH///8PAAAAAAAAAAAAAAAAAPIAAACA/0EA/v////////////////////////////////////8AAAAA/B8AAAAAAAAIAAB4OAAAAADg////////////fwQAAID///8fAAAAAAAAAAAAAAAAAPoPAABY/yE4/////////////////////////////////////z8AAAAA/j8AAAAAAAAQAAAeDAAAAADq/////////////z8AAIH///8fAAAAAAAAAAAAAAAAAPYHAAAf/gP8/////////////////////////////////////x8AAAAA/z8AAAAAAAAAAIAHAAAAAADA//////////////8BAMf///8/AAAAAAAAAAAAAAAAAOgDAAA//gD8/////////////////////////////////////wcAAACA/z8AAAAAAAAAAPADAQAAAABA//////////////8PAMD///9/AAAAAAAAAAAAAAAAAPgPAADvHwD8/////////////////////////////////////wEAAACA/w8AAAAAAAAAANwDAAAAAAAQ/v//////////////AfD/////AQAAAAAAAAAAAAAAAMAfAACeIQD4/////////////////////////////////////wIAAACA/wcQAAAAAAAAgAsAAAAAAAAg/P//////////////B/7/////HwAAAAAAAAAAAAAAAI8/AAB/AQz/////////////////////////////////////PwgAAACA/weAAAAAAAAAEAQAAAAAAAAA+P//////////////B/7/////PwAAAAAAAAAAAAAAwE98AAB+h////////////////////////////////////////wMAAACA/wEAAAAAAAAADAAAAAAAAADA6P//////////////B/z/////PwAAAAAAAAAAAAAA6A/8ACD+//////////////////////////////////////////8hAAAA/wAAAAAAAACAAAAAAAAAAADA6P//////////////r/z//////wAAAAAAAAAAAAAA4I//AP7///////////////////////////////////////////87AAAA/wAAAAAAAAAUAAAAAAAAAACA4f//////////////D/j//////wEAAAAAAAAAAAAA4If/B/7///////////////////////////////////////////9/AAAAHwAAAAIAgJgAAAAAAAAAAAAAAv//////////////H/7//////wEAAAAAAAAAAAAA4IP/B/////////////////////////////////////////////8/AAAAHgAAAAgA8AAAAAAAAAAAAAAAgP//////////////f/z/////fwIAAAAAAAAAAAAAYMD/g/////////////////////////////////////////////87AAAADgAAAADkAAAAAAAAAAAAAAAAAP7/////////////////////zwEAAAAAAAAAAAAAAAD/x/////////////////////////////////////////////9xAAAAAgAAAAAAAAAAAAAAAAAAAAAAAPz/////////////////////4QEAAAAAAAAAAAAAAMA/+P////////////////////////////////////////////9xAACAAQAAAAAAAAAAAAAAAAAAAAAAAP///////////////////w/+YAAAAAAAAAAAAAAAAGAB+P/////////////////////////////////////////////xAACAAAAAAAAAAAAAAAAAAAAAAAAAALz//////////////////4MD8A0AAAAAAAAAAAAAAAAA///////////////////////////////////////////////xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHj+/////////////////wAO+B8AAAAAAAAAAAAAAAD8//////////////////////////////////////////////+xAQAgAAAAAAAAAAAAAAAAAAAAAAAAAOD/////////////////P/4A/B8AAAAAAAAAAAAAAADn//////////////////////////////////////////////8wAAAQAAAAAAAAAAAAAAAAAAAAAAAAAID8////////////////nz8A/D8AAAAAAAAAAAAAAID///////////////////////////////////////////////8QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAID/////////////////738A/j8AAAAAAAAAAAAAAAD+/////////////////////////////////////////////38QAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAD/////////////////9z8QADIAAAAAAAAAAAAAAAD4/////////////////////////////////////////////z8wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////////9AgDAAAAAAAAAAAAAAAADw////////////8///H/z//////////////////////////x9wAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//////////////////39OAAAAAAAAAAAAAAAAAADg/////////58+8P//A/z//////////////////////////w8QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////////////////////AAAAAAAAAAAAAAAAAADg/////////w84+P//Afz//////////////////////////wcAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAD//////////////////48/AAAAAAAAAAAAAAAAAADg////+f///wf+//9/kP///////////////////////////wMUgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//////////////////+cDAAAAAAAAAAAAAAAAAADg////8f///wM4+P8/kP///////////////////////////wE4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//////////////////3gAAAAAAAAAAAAAAAAAAADg///9wf///wEA4P8/4P///////////////////////////wB4DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////////////////DzAAAQAAAAAAAAAAAAAAAADg///gw////wEAgP9/wP//////////////////////////fwD4NwAAAAAAAAAAAAAAAAAAAAAAAAAAAID/////////////////BwAAAAAAAAAAAAAAAAAAwP///xjgB/7//wAAAP9/gP//////////////////////////HgD+HwAAAAAAAAAAAAAAAAAAAAAAAAAAAID/////////////////AwAAAAAAAAAAAAAAAAAAwP//PwD0D/r//wAAAPh/AP7///////////////////////9/AAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAID/////////////////AwAAAAAAAAAAAAAAAAAAwP//PwCGH8D//wAAAPj/AP7///////////////////////8/AEBnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////////////////DwAAAAAAAAAAAAAAAAAAwP//PwAG/4D//wD+APj/AfL///////////////////////8PAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////9/DAAAAAAAAAAAAAAAAAAAwP//DwAB/IH//4P/A/z/A+D///////////////////////8HAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAID///////////////8/AAAAAAAAAAAAAAAAAAAAwP//AQAH+If/cvz/////B/T/////////////////////8/8HAAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAID///////////////8PAAAAAAAAAAAAAAAAAAAAwP//AAAOwJHfyf//////H/z/////////////////////8P8BAAAPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////8PAAAAAAAAAAAAAAAAAAAAwP//IAEGgIE/5P//////B/j///////////////////9/eH4AAAAPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////8FAAAAAAAAAAAAAAIAAAAA4P//AAAHAAP+8P//////B/z///////////////////8/GHgAAAAPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+//////////////8DAAAAAAAAAAAAAMACAAAA4P//BAAAAAG+4v//////A/T///////////////////8HAPwAAIAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8/////////////38DAAAAAAAAAAAAAIAAAAAAwP9/AAAAgAH+8P//////A/D///////////////////8PAPwBAJADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4/////////////38BAAAAAAAAAAAAAAAQAAAAwP9/AAAAfgD69///////A/D///////////////////8/AvIjAOADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4/////////////38AAAAAAAAAAAAAAAAAAAAAwP8fAAAMeAA4p///////H/D///////////////////9/H+AHAPIDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADw//////////////8AAAAAAAAAAAAAAAAgAAAAAPgPwPu/AAAw3//f//////7/////////////////////B/AHAP4DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADw//////////////8AAAAAAAAAAAAAAAAAAAAAADAA/v8fEAAghBgO////////////////////////////A+AHBP8BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADg//////////////8BAAAAAAAAAAAAAAAAAAAAADDA//8/EAAAQAAA////////////////////////////AOAHAP8BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADA//////////////8BAAAAAAAAAAAAAAAAAAAAAPDz//8/AACAHwAM//////////////////////////9/AOAD/v8BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA//////////////8AAAAAAAAAAAAAAAAAAAAAAPj///9fAAAAAAAG//////////////////////////9/APAG/38AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA/////////////x8AAAAAAAAAAAAAAAAAAAAAAPz///8PAAAAAACA////////////////////////////ATDE8wMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA+P///////////wcAAAAAAAAAAAAAAAAAAAAAAP7///8/AAAAAACA////////////////////////////AQAonwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6f///////////wMAAAAAAAAAAAAAAAAAAAAAgP////8/AAAAAADA////////////////////////////ASD8BoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyP///////////wAAAAAAAAAAAAAAAAAAAEAAwP//////BwAMAADA////////////////////////////AwD+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwP//////////fwAAAEAAAAAAAAAAAAAAAAAA4P//////fwA/AADA////////////////////////////BwBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwP//////////PwAAAAAAAAAAAAAAAAAAAAAA4P//////fwD/AwDg////////////////////////////DwBoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgOP/////////HwAAAAAAAAAAAAAAAAAAAAAA8P///////wH/f/Dg////////////////////////////DwAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMf/////////PwAAAAAAAAAAAAAAAAAAAAAA4P///////w//////////////////////////////////BwAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMf////////wHwAAAAAAAAAAAAAAAAAAAAAA4P//////////////////////////////////////////FwAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIb/////319gPgAAAAAAAAAAAAAAAAAAAAAA4P//////////////////4f//////////////////////HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACKz/////BwwAPAAAAAAAAAAAAAAAAAAAAAAQ8P/////////////f////4P//////////////////////DwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJj/////AQAAfAAAAAAAAAAAAAAAAAAAABAA/P/////////////d////wf//////////////////////DwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADL+//9/AAAAeAAAAAAAAAAAAAAAAAAAAGAI/v/////////////7////gf//////////////////////BwAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHz4//8/AAAA/AAAAAAAAAAAAAAAAAAAAAjB//////////////+H////A///////////////////////AwACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHj4//8fAAAA+AAAAAAAAAAAAAAAAAAAAADg//////////////+H////B/z/////////////////////AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAODx//8/AAAA+AwAAAAAAAAAAAAAAAAAAADg//////////////8P////D/j8////////////////////AIAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIDh//8fAAAA+CAAAAAAAAAAAAAAAAAAAAD4//////////////8P/v//LwD9////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADj//8/AAAA4AAAAAAAAAAAAAAAAAAAAAD4//////////////8f/v//TwD5////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACD//8fAAAAwKAAAAAAAAAAAAAAAAAAAAD8//////////////8f/P//X8AB/uH///////////////8/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAH//8fAAAAcBgAAAAAAAAAAAAAAAAAAAD8//////////////8//P//f+ABAMD///////////////8/DAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/v8fAAAAABAJAAAAAAAAAAAAAAAAAAD+//////////////9/+P////4DAID///////////////8fhgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAY/P8fAAAAABABAAAAAAAAAAAAAAAAAAD///////////////9/4P////8PAAD///////////////8HBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ+P8PAAAAAAACAAAAAAAAAAAAAAAAAAD///////////////9/4P////8/AAD8//////////////8BBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8P8PAAAA/wsIAAAAAAAAAAAAAAAAAID/////////////////wP////9/AAD4/////7///////38AAgAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA4P8PAACA8R9QAAAAAAAAAAAAAAAAAID/////////////////wf//////AAD4/////3///////x8AAgAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA5P8fAAAABB+gAQAAAAAAAAAAAAAAAMD/////////////////w/////9/AAD4/////4P//////wMAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAA4P8fAOAHAHggAAAAAAAAAAAAAAAAAMD/////////////////w/////8/AADw////PwD///9/EAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAAA4P8/APgDAPABAAAAAAAAAAAAAAAAAMD/////////////////g/////8fAAAA/P//PwD+//9/GAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4P8/APgFAOhPAAAAAAAAAAAAAAAAAID/////////////////A/////8vAAAA/P//HwD+//8fAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAA4P9/APgBAADgBgAAAAAAAAAAAAAAAID/////////////////A/7///8HAAAA/P//BwD+//8PPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAwP//APwBIADAPwAAAAAAAAAAAAAAAID/////////////////B/z///8PAAAA/P//AwD4//8HHgAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAP//Af8BAACgfwAAAAAAAAAAAAAAAAD/////////////////B/z///8DAAAA/P//AQD4//8PHgAACAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP7/9/8BAHj4S/wCAAAAAAAAAAAAAAD/////////////////D/j///8BAAAA/P//AADg//8PAAAAHgAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPD///8AACAAAEAQAAAAAAAAAAAAAAD/////////////////H/D//38AAAAA/P9/AADg//8fAAAADgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMD//38BAAAAAAAUAAAAAAAAAAAgAID/////////////////P+D//38AAAAA+P8fAADg//8/AAAAHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//38AAAAAAAAIAAAAAAAAAADABID/////////////////P+j//wcAAAAA+P8PAADg+/9/AAAAHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4/38YAAAAAAAwAAAAAAAAAAAABID/////////////////P8H//wEAAAAA+P8HAADw+P//AAAADgAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADA4H//AAAAAAAgAAAAAAAAAAAAAID/////////////////f+H//wAAAAAA+P8BAABg+P//AQAABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwP//AQAAAAAgAAAAAAAAAAAAA8D//////////////////+D/fwAAAAAA8P8AAAAA+P//AwAABwAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgP//AQAAAAAgAAAAAAAAAACAAOD//////////////////8P/BwAAAAAA4P8AAAAA8P//AwAADgAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AwAAAAAAAAAAAAAAAAAAAMD//////////////////+f/AwAAAAAA4P8AAAAA8P//AwAAPgAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPD/AQAAAABAAAAAAAAAAAAAAMD//////////////////69/AAAAAAAA4P8AAAAA8P//BwAA/QEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMD+AQAAAAAgAQAAAAAAAAAAAMD//////////////////98HAAAAAAAAwP8BAAAA8Pz/BwAAzgAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AQAAEAAAAAAAAAAAAAAAAMD//////////////////78DAAgAAAAAwP8AAAAC8Pz/BwAA1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8AQAAwQAQAAAAAAAAAAAAAID//////////////////38AAAAAAAAAwP8AAAAA8PD/AwAAtQYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4AQCAGQAAAAAAAAAAAAAAAID//////////////////z8AIAAAAAAAgP8AAAAE8OD/AwCAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwAADweIBAAAAAAAAAAAAAAID//////////////////38APwAAAAAAAv8AAAACYMD/AQCAsAYAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgAQD+/yAgAAAAAAAAAAAAAAD8///////////////////wPwAAAAAAAP8AAAABcMD/AADA8AMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwAQD+/p83AAAAAAAAAAAAAAD4////////////////////PwAAAAAAAH8AAAAAYIB+AABAwAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgBwD+/P8fAAAAAAAAAAAAAADw////////////////////HwAAAAAAAL4AAAAAMAEcAAAgYBkAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADw///P9/AAAAAAAAAAAAAADg////////////////////HwAAAAAAAL4DAAACMAAMAAAQgAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/pn///9/AAAAAAAAAAAAAADA////////////////////HwAAAAAAAA4DAAAA8AAkAAAAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAePb/////AQAAAAAAAAAAAADA////////////////////DwAAAAAABIgHAAAE8AEAAAAEwB8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4Pj/////AwAAAAAAAAAAAADA////////////////////DwAAAAAAAAAHAAAE0AEAAAAE8B8AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUPD/////BwAAAAAAAAAAAACA////////////////////BwAAAAAAAAAHAAAIgAEAAAAEMB8AAAAAAIAAAAAAwgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOD/////DwAAAAAAAAAAAAAA/v//////////////////BwAAAAAAAAAHAAAAgAcAAAAGEBcAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOD/////HwAAAAAAAAAAAAAA/P//H/7/////////////AwAAAAAAAAAHAAAAgA8AAAAGAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOD//////w8AAAAAAAAAAAAA8P//Afz/////////////AwAAAAAAAAAAAABAAB4AAAAfBAQAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOD//////38AAAAAAAAAAAAA4P9/APz/////////////AQAAAAAAAAAAAACABz8AAMA/AQAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOD///////8AAAAAAAAAAAAAwAcAAPj/////////////AAAAAAAAAAAAAACAD34AAOAfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOD///////8BAAAAAAAAAAAAAAAAAED8////////////AAAAAAAACAAAAAAAH34AAPAPACAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAMD///////8DAAAAAAAAAAAAAAAAAAD4//////////9/AAAAAAAAAAAAAAAAPnwAAfgHACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOD///////8DAAAAAAAAAAAAAAAAAAD6//////////8/AAAAAAAABAAAAAAAfHwQAPwPAABAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPj///////8DAAAAAAAAAAAAAAAAAAD4//////////8fAAAAAAAAAAAAAAAA+XgJwv8HAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPj///////8PAAAAAAAAAAAAAAAAAAD4//////////8PAAAAAAAAAAAAAAAA9PEAgP8PAAABAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAPj///////8PAAAAAAAAAAAAAAAAAED4//////////8DAAAAAAAAAAAAAAAA4M8AyP8PAIAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPz///////8PAAAAAAAAAAAAAAAAAAD4//////////8BAAAAAAAAAAAAAAAAyP8B/P8fAIIBAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////////8PAAAAAAAAAAAAAAAAAAD4/////////38AAAAAAAAAAAAAAAAAwP8B/P8P/8EBAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////////8PAAAAAAAAAAAAAAAAACD4/////////z8AAAAAAAAAAAAAAAAAwH8C/P8HAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUAgP////////9/AAAAAAAAAAAAAAAAAAD8/////////x8AAAAAAAAAAAAAAAAAkP8D/P+HCMAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACoAgP////////9/AwAAAAAAAAAAAAAAAAD8/////////w8AAAAAAAAAAAAAAAAAAH8A+P+HYcChjwAAAAAAAAAgCBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAwP//////////XwAAAAAAAAAAAAAAAAD8/////////w8AAAAAAAAAAAAAAAAAIP4B+P+DXwDgLwAAAAgAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwP//////////fwAAAAAAAAAAAAAAAAD8/////////wcAAAAAAAAAAAAAAAAAAP4B8v+Bz4oQDxkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwP//////////fwAAAAAAAAAAAAAAAAD4/////////wcAAAAAAAAAAAAAAAAAgPwL8P/BDwgAGH4AoAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAgP///////////w8AAAAAAAAAAAAAAADw/////////wAAAAAAAAAAAAAAAAAAAPnv8P/BDYAAH/8HAPABAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////////////8BAAAAAAAAAAAAAADg/////////wAAAAAAAAAAAAAAAAAAAPEPAPvBHbAf/v8fAIACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgP////////////8HAAAAAAAAAAAAAADA/////////wAAAAAAAAAAAAAAAAAAAOAPAOCBHSAj9P//AAABAAAAAAAAAAACAAAABAAAAAAAAAAAAAAAAAAAAAAAwP////////////8PAAAAAAAAAAAAAACA////////fwAAAAAAAAAAAAAAAAAAAOAPAACAeQAAxP//A4ALAAAAAAAAAIQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4P////////////8fAAAAAAAAAAAAAACA////////PwAAAEAAAAAAAAAAAAAAAIAPAACAKQAAAP7/D4ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwP//////////////AQAAAAAAAAAAAAAA////////vwAAAAAAAAAAAAAAAAAAABAPAACAqQAAAPj/T+AgAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAwP//////////////AwAAAAAAAAAAAAAA////////PwAAAAAAAAAAAAAAAAAAAAAOAAIAAAEAJvD/n34gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwP//////////////AwAAAAAAAAAAAAAA////////fwAAAAAAAAAAAAAAAAAAAADwAAAAAQAAMOD/fxhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgP//////////////AwAAAAAAAAAAAAAA/v//////fwAAAAAAAAAAAAAAAAAAAAD84UAAAAAAMOD/PwCAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP7/////////////AwAAAAAAAAAAAAAA/P//////fwAAAAAAAAAAAQAAAAAAAADg/xcAAgCCAOD/PwCABgAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP7/////////////AwAAAAAIAAAAAAAA/P//////vwAAAAAAAAAAAAAAAAAAAAAA+R8AAFBIAPD/fQAAJgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPz/////////////AwAAAAAAAAAAAAAA/P//////PwAAAAAAAAAAAAAAAAAAAAAAgH9I4IsgADh/8AAAygAAAAAQAIAAAAAAAAAAgAEAAAAAAAAAAAAAAAAAAPz/////////////AwAAAAAAAAAAAAAA/P//////fwAAAAAAAAAAAAAAAAAAAAAAAIB9LzwAAAB+4EEAHAIAAABAAAACAAAAAAAAgAAAAAAAAAAAAAAAAAAAAPj/////////////AQAAAAAAAAAAAAAA/P//////fwAAAAAAAAAAAAAAAAAAAAAAAAAAAAcAAAAgwBcCQAUAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAPj/////////////AQAAAAAAAAAAAAAA/P///////wAAAAAAAAAAAAAAAAAAAAAAAACAgQMAAAAAgG8AAAcAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAPD/////////////AAAAAAAAAAAAAAAA+P///////wAAAAAAAAAAAAAAAAAAAAAIAAAAwAAAAAAQAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPD///////////8/AAAAAAAAAAAAAAAA+P///////wEAAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAQACAAABgIAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAOD///////////8/AAAAAAAAAAAAAAAA+P///////wEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwIwAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOD///////////8fAAAAAAAAAAAAAAAA+P///////0EAAAAAAAAAAAAAAAAAAAAAAAAAAAAwBgEwAAAEAAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMD///////////8PAAAAAAAAAAAAAAAA+P///////4EBBAAAAAAAAAAAAAAAAAAAAAAAAABA/wMwAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMD///////////8PAAAAAAAAAAAAAAAA/P///////wEEBAAAAAAAAAAAAAAAAAAAAAAAAADg/wNwAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAID///////////8HAAAAAAAAAAAAAAAA/v///////wEADwAAAAAAAAAAAAAAAAAAAAAAAADg/wF4AAAAAAAAAAAAAIABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAID///////////8DAAAAAAAAAAAAAAAA/v///////wEADgAAAAAAAAAAAAAAAAAAAAAAAADw/wF4AAAAAABAAAAACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////8DAAAAAAAAAAAAAAAA/////////wEADwAAAAAAAAAAAAAAAAAAAAAAAPj4/wL4AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////8DAAAAAAAAAAAAAAAA/////////wOADwAAAAAAAAAAAAAAAAAAAAAAAPz4fwD4AwAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+//////////8DAAAAAAAAAAAAAAAA/////////wHAHwAAAAAAAAAAAAAAAAAAAAAAAP7//wD4BwAAAACgAQAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAD4//////////8DAAAAAAAAABAAAAAA/////////wHgFwAAAAAAAAAAAAAAAAAAAAAAAP7//wf4BwAAAABAAQAAAQAAAAAAAAAQBAAAAAAAAAAAAAAAAAAAAADg//////////8DAAAAAAAAAAAAAACA/////////wD+DwAAAAAAAAAAAAAAAAAAAAAAgP7//wf4BwAAAABAAQCAAQAAAAAAAAIAAwAAAAAAAAAAAAAAAAAAAACA//////////8DAAAAAAAAAAAAAACA////////fwD+DwAAAAAAAAAAAAAAAAAAAAAAoP///0/8BwAAAAAAAQDgBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/v////////8DAAAAAAAAAAAAAACA////////DwD/BwAAAAAAAAAAAAAAAAAAAAAA4P///3/8DwAAAAAAAABECgAAAAAAADAAQAAAAAAAAAAAAAAAAAAAAAAA/v////////8DAAAAAAAAAAAAAAAA////////AwD/BwAAAAAAAAAAAAAAAAAAAAAA4P//////DwAAAAAAAQA4BAAAAAAAAAAAQCAAAAAAAAAAAAAAAAAAAAAA+P////////8BAAAAAAAAAAAAAAAA////////AQD/BwAAAAAAAAAAAAAAAAAAAAAA8P//////HwAAAAAAAABAARAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA+P////////8BAAAAAAAAAAAAAAAA/v//////AAD/AwAAAAAAAAAAAAAAAAAAAAAA+P//////HwAAAAAABAAABAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8P////////8BAAAAAAAAAAAAAAAA/v////9/AAD+AwAAAAAAAAAAAAAAAAAAAAAA+P//////PwAAgAAABAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8P////////8AAAAAAAAAAAAAAAAA/P////8/AAD+AwAAAAAAAAAAAAAAAAAAAAAA/v///////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8P///////38AAAAAAAAAAAAAAAAA/P////8fAAD+AQAIAAAAAAAAAAAAAAAAAADA/////////wMAAAABCAAABAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA8P///////38AAAAAAAAAAAAAAAAA+P////8/AAD/AQAAAAAAAAAAAAAAAAAAAED+/////////wMAAABmAAAAAAYAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA8P///////z8AAAAAAAAAAAAAAAAA+P////8/AID/AYAAAAAAAAAAAAAAAAAAAID//////////wcAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8P///////z8AAAAAAAAAAAAAAAAA8P////9/AID/AAAAAAAAAAAAAAAAAAAAAMD//////////wcAAACYACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8P///////x8AAAAAAAAAAAAAAAAA4P////9/AID/AAAAAAAAAAAAAAAAAAAAAOD//////////y8AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+P///////w8AAAAAAAAAAAAAAAAA4P////9/AID/AAAAAAAAAAAAAAAAAAAAAPD//////////z8AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+P///////wAAAAAAAAAAAAAAAAAA4P////9/AIB/AAAAAAAAAAAAAAAAAAAAAPD//////////z8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+P//////PwAAAAAAAAAAAAAAAAAA4P////9/AIB/AAAAAAAAAAAAAAAAAAAAAPj//////////38AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA+P//////BwAAAAAAAAAAAAAAAAAA4P////9/AIB/AAAAAAAAAAAAAAAAAAAAAPj///////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+P//////AQAAAAAAAAAAAAAAAAAA4P////8fAAA/AAAAAAAAAAAAAAAAAAAAAPj///////////8BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+P//////AAAAAAAAAAAAAAAAAAAA4P////8HAAAOAAAAAAAAAAAAAAAAAAAAAPD///////////8HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+P////9/AAAAAAAAAAAAAAAAAAAAwP////8BAAAAAAAAAAAAAAAAAAAAAAAAAPT///////////8DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/P////9/AAAAAAAAAAAAAAAAAAAAwP////8DAAAAAAAAAAAAAAAAAAAAAAAAAPj///////////8DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/P////9/AAAAAAAAAAAAAAAAAAAAwP////8DAAAAAAAAAAAAAAAAAAAAAAAAAPj///////////8DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA/P////9/AAAAAAAAAAAAAAAAAAAAgP////8BAAAAAAAAAAAAAAAAAAAAAAAAAPD///////////8HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/P//////AAAAAAAAAAAAAAAAAAAAgP////8BAAAAAAAAAAAAAAAAAAAAAAAAAPD///////////8HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/P////9/AAAAAAAAAAAAAAAAAAAAAP////8BAAAAAAAAAAAAAAAAAAAAAAAAAOD///////////8HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/v////8/AAAAAAAAAAAAAAAAAAAAAP7///8AAAAAAAAAAAAAAAAAAAAAAAAAAOD///////////8HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/v////8fAAAAAAAAAAAAAAAAAAAAAP7//38AAAAAAAAAAAAAAAAAAAAAAAAAAMD///////////8HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/v////8PAAAAAAAAAAAAAAAAAAAAAPz//z8AAAAAAAAAAAAAAAAAAAAAAAAAAMD///////////8HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/v////8PAAAAAAAAAAAAAAAAAAAAAPj//x8AAAAAAAAAAAAAAAAAAAAAAAAAAMD///////////8DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/v////8HAAAAAAAAAAAAAAAAAAAAAPj//x8AAAAAAAAAAAAAAAAAAAAAAAAAAMD///////////8DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/v////8DAAAAAAAAAAAAAAAAAAAAAPD//w8AAAAAAAAAAAAAAAAAAAAAAAAAAID///////////8DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/v////8BAAAAAAAAAAAAAAAAAAAAAPD//wcAAAAAAAAAAAAAAAAAAAAAAAAAAID///8D//////8DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/v///38AAAAAAAAAAAAAAAAAAAAAAPD//wMAAAAAAAAAAAAAAAAAAAAAAAAAAAD//y8A+P////8BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/v///38AAAAAAAAAAAAAAAAAAAAAAPD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAID//wMA8P////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/v///z8AAAAAAAAAAAAAAAAAAAAAAPD/fwAAAAAAAAAAAAAAAAAAAAAAAAAAAID//wAA4Pf//38AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA/////x8AAAAAAAAAAAAAAAAAAAAAAPD/DwAAAAAAAAAAAAAAAAAAAAAAAAAAAMD//wAAwPP//38AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////9x8AAAAAAAAAAAAAAAAAAAAAAOAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMB/AAAAwPn//z8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////jwcAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfAAAAgOj//z8AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA////HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOD//x8AAAAAABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA////HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMT//x8AAAAAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADA////PwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAID//w8AAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADA////PwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//w8AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADg////PwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//w8AAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADg////HwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+/wcAAAAAAOARAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADg////DwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4fQAAAAAAAOAfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADg////AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAOAPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADA//8fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADg//8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAOADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADg//8HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAMADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADw//8HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgEAAAAAAMoBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADw/z8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AEAAAAAAOsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADw/z8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AEAAAAAgA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQ/38BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+AAAAAAAgA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQ//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+AEAAAAAwAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQ/z8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAA8AMAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADU/z8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+AMAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADI/x8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD6/x8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4/wMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4/wEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgHwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8/wEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8/wMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4/x8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+/w8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+/w8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+/wMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+/wEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+/wEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+fwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+PwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8PwCABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8PwDADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8fwBACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwdwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQ+wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABg+wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA/wMAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/r8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+const LAND = (function(){
+  const bin=atob(LAND_B64), a=new Uint8Array(bin.length);
+  for(let i=0;i<bin.length;i++) a[i]=bin.charCodeAt(i);
+  return a;
+})();
+// Land-Zellen indexieren (Natural Earth), cos-gewichtet — jeder Flecken fester Erde zählt
+const LAND_ZELLEN=(function(){
+  const zellen=[], gewichte=[]; let summe=0;
+  for(let y=0;y<300;y++){
+    const lat=89.75-y*0.5, g=Math.cos(lat*Math.PI/180);
+    for(let x=0;x<720;x++){
+      const i=y*720+x;
+      if(((LAND[i>>3]>>(i&7))&1)!==1) continue;
+      zellen.push(i); summe+=g; gewichte.push(summe);
+    }
+  }
+  return {zellen, gewichte, summe};
+})();
+function zellPunkt(i){
+  const y=Math.floor(i/720), x=i%720;
+  return {lat:89.75-y*0.5+(Math.random()-0.5)*0.2, lon:-179.75+x*0.5+(Math.random()-0.5)*0.2};
+}
+function zufallsLandPunkt(){
+  const z=Math.random()*LAND_ZELLEN.summe;
+  let lo=0, hi=LAND_ZELLEN.gewichte.length-1;
+  while(lo<hi){ const m=(lo+hi)>>1; if(LAND_ZELLEN.gewichte[m]<z) lo=m+1; else hi=m; }
+  return zellPunkt(LAND_ZELLEN.zellen[lo]);
+}
+
+
+/* ---------- Suchlauf & Namens-Dekodierung ---------- */
+function maleSuchpunkt(p, rastet){
+  const c=$("suchKarte");
+  if(c.width!==720){ c.width=720; c.height=300; }
+  const x=c.getContext("2d");
+  x.drawImage(nachtKarte(),0,0);
+  const px=(p.lon+179.75)/0.5, py=(89.75-p.lat)/0.5;
+  x.shadowColor="#59d6c8"; x.shadowBlur=10; x.fillStyle="#59d6c8";
+  x.beginPath(); x.arc(px,py, rastet?4:3, 0, Math.PI*2); x.fill();
+  x.shadowBlur=0;
+  if(rastet){
+    x.strokeStyle="rgba(89,214,200,.75)"; x.lineWidth=1.5;
+    x.beginPath(); x.arc(px,py,9,0,Math.PI*2); x.stroke();
+  }
+}
+function tickerStart(){
+  $("ticker").classList.add("an");
+  $("ticker").classList.remove("rastet");
+  if(tickerTimer) clearInterval(tickerTimer);
+  tickerTimer=setInterval(()=>{
+    tickerKoord=zufallsLandPunkt();   // festes Land genügt — Berg, Tal, Dorf: alles ist ein Fund
+    maleSuchpunkt(tickerKoord, false);
+    $("tickerZahl").innerHTML = koordFest(tickerKoord).replace("\n"," &nbsp;·&nbsp; ") + "<small>tippen zum Anhalten</small>";
+  }, 80);
+}
+function tickerRastet(p, unterzeile){
+  return new Promise(res=>{
+    if(tickerTimer){ clearInterval(tickerTimer); tickerTimer=null; }
+    maleSuchpunkt(p, true);
+    const ziel=koordFest(p);
+    let fest=0;
+    tickerTimer=setInterval(()=>{
+      fest++;
+      let s=ziel.slice(0,fest);
+      for(let i=fest;i<ziel.length;i++){
+        const z=ziel[i];
+        s += /[0-9]/.test(z) ? String(Math.floor(Math.random()*10)) : z;
+      }
+      $("tickerZahl").innerHTML = s.replace("\n"," &nbsp;·&nbsp; ") + "<small>"+(fest>=ziel.length?unterzeile:"rastet ein")+"</small>";
+      if(fest>=ziel.length){
+        clearInterval(tickerTimer); tickerTimer=null;
+        $("ticker").classList.add("rastet");
+        res();
+      }
+    }, 55);
+  });
+}
+function tickerAus(){
+  if(tickerTimer){ clearInterval(tickerTimer); tickerTimer=null; }
+  $("ticker").classList.remove("an");
+}
+function dekodiereName(el, ziel){
+  // Buchstaben lösen sich aus Zufallszeichen — der Ort gibt sich zu erkennen
+  return new Promise(res=>{
+    const ZEICHEN="ABCDEFGHIJKLMNOPQRSTUVWXYZ·–";
+    let fest=0;
+    const t=setInterval(()=>{
+      fest++;
+      let s=ziel.slice(0,fest);
+      for(let i=fest;i<ziel.length;i++){
+        s += ziel[i]===" " ? " " : ZEICHEN[Math.floor(Math.random()*ZEICHEN.length)];
+      }
+      el.textContent=s;
+      if(fest>=ziel.length){ clearInterval(t); res(); }
+    }, Math.max(22, Math.min(60, 900/ziel.length)));
+  });
+}
+
+/* ---------- Hörort ---------- */
+function findeHoerer(){
+  return new Promise(res=>{
+    if(!navigator.geolocation){ res(MOEDLING); return; }
+    let fertig=false;
+    const ok=p=>{ if(!fertig){fertig=true; res({lat:p.coords.latitude, lon:p.coords.longitude});} };
+    const nein=()=>{ if(!fertig){fertig=true; res(MOEDLING);} };
+    navigator.geolocation.getCurrentPosition(ok, nein, {timeout:2500, maximumAge:600000});
+    setTimeout(nein, 3000);
+  });
+}
+
+/* ---------- Fund bestimmen: irgendwas Benanntes ist immer da ---------- */
+const NOMI_TYP=[["village","Dorf"],["hamlet","Weiler"],["town","Kleinstadt"],["city","Stadt"],["isolated_dwelling","Einzelgehöft"],["municipality","Gemeinde"]];
+const NATUR_TYP={peak:"Gipfel",mountain_range:"Gebirge",ridge:"Grat",saddle:"Pass",volcano:"Vulkan",hill:"Hügel",
+  valley:"Tal",water:"See",lake:"See",reservoir:"Stausee",river:"Fluss",stream:"Bach",bay:"Bucht",strait:"Meerenge",
+  beach:"Strand",island:"Insel",islet:"Insel",archipelago:"Inselgruppe",desert:"Wüste",dune:"Düne",glacier:"Gletscher",
+  wood:"Wald",forest:"Wald",wetland:"Feuchtgebiet",spring:"Quelle",waterfall:"Wasserfall",cape:"Kap",cliff:"Klippe",
+  plateau:"Hochebene",canyon:"Schlucht",gorge:"Schlucht",oasis:"Oase",reef:"Riff",cave_entrance:"Höhle",
+  protected_area:"Schutzgebiet",national_park:"Nationalpark",locality:"Flur",farm:"Gehöft",
+  suburb:"Vorort",quarter:"Viertel",neighbourhood:"Viertel"};
+const VERWALTUNGSMUELL=/^area\s+[a-z0-9]\b|\b(electoral|regional district|census|subdivision|unorganized|division no)\b/i;
+async function findeFund(p){
+  // Stufe 1+2: Nominatim direkt am Punkt — Siedlung oder benanntes Naturding
+  let d=null;
+  try{
+    const url="https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=14&accept-language=de&extratags=1"
+      + "&lat="+p.lat.toFixed(5)+"&lon="+p.lon.toFixed(5);
+    const r=await fetchMitLimit(url,{headers:{"Accept":"application/json"}}, 8000);
+    if(r.ok) d=await r.json();
+  }catch(e){}
+  const a=(d && !d.error && d.address) || {};
+  const ex=(d && d.extratags) || {};
+  const basis={
+    region:a.state || a.county || a.region || "",
+    land:a.country || "",
+    cc:(a.country_code||"").toUpperCase(),
+    qid:(ex.wikidata && /^Q\d+$/.test(ex.wikidata)) ? ex.wikidata : null,
+    popTag:parseInt(ex.population,10) || null,
+    eleTag:isFinite(parseFloat(ex.ele)) ? Math.round(parseFloat(ex.ele)) : null
+  };
+  let name=null, typ=null;
+  for(const [k,t] of NOMI_TYP){ if(a[k]){ name=a[k]; typ=t; break; } }
+  if(!name && d && d.name && !/^\d+$/.test(d.name)){
+    const t=NATUR_TYP[d.addresstype] || NATUR_TYP[d.type];
+    if(t){ name=d.name; typ=t; }
+  }
+  if(name && !VERWALTUNGSMUELL.test(name))
+    return Object.assign({name, typ, lat:parseFloat(d.lat), lon:parseFloat(d.lon)}, basis);
+  // Stufe 3: das nächste benannte Ding laut Wikipedia — Umkreis wächst, bis etwas da ist
+  for(const radius of [10000, 30000, 100000]){
+    for(const lang of ["de","en"]){
+      try{
+        const g=await wikiApi(lang,"list=geosearch&gscoord="+p.lat+"%7C"+p.lon+"&gsradius="+radius+"&gslimit=5");
+        const t=g && g.query && g.query.geosearch;
+        if(!t || !t.length) continue;
+        const tr=t[0];
+        const dd=await wikiApi(lang,"pageids="+tr.pageid+"&prop=extracts%7Cpageprops&explaintext=1&ppprop=wikibase_item");
+        const page=dd && dd.query && dd.query.pages && dd.query.pages[tr.pageid];
+        if(!page || !page.extract || /steht für:|bezeichnet:|may refer to/i.test(page.extract.slice(0,200))) continue;
+        const qid=(page.pageprops && page.pageprops.wikibase_item) || null;
+        return Object.assign({}, basis, {
+          name:tr.title, typ:null,
+          lat:(tr.lat!=null ? tr.lat : p.lat), lon:(tr.lon!=null ? tr.lon : p.lon),
+          qid:qid || basis.qid,
+          artikel:{text:page.extract, titel:tr.title, fremd:false, qid:qid}
+        });
+      }catch(e){}
+    }
+  }
+  // Stufe 4: wenigstens die Gegend beim Namen nennen
+  if(basis.region || basis.land)
+    return Object.assign({name:basis.region || basis.land, typ:"Gegend", lat:p.lat, lon:p.lon}, basis);
+  return null;
+}
+
+/* ---------- Wikidata: was der Fund IST — belegte Fakten, kein Rätselraten ---------- */
+const WD_TYP={Q74047:"Geisterstadt",Q5119:"Hauptstadt",Q8072:"Vulkan",Q1637706:"Millionenstadt",Q1549591:"Großstadt",
+  Q515:"Stadt",Q3957:"Kleinstadt",Q15284:"Gemeinde",Q532:"Dorf",Q5084:"Weiler",
+  Q188509:"Vorort",Q8502:"Berg",Q46831:"Gebirge",Q23397:"See",Q4022:"Fluss",Q23442:"Insel",Q486972:"Siedlung"};
+const WD_TYP_REIHE=["Q74047","Q5119","Q8072","Q1637706","Q1549591","Q515","Q3957","Q15284","Q532","Q5084","Q188509","Q8502","Q46831","Q23397","Q4022","Q23442","Q486972"];
+async function wikidataHole(qid){
+  try{
+    const r=await fetchMitLimit("https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&origin=*&props=claims&ids="+qid, null, 8000);
+    if(!r.ok) return null;
+    const d=await r.json();
+    const cl=d && d.entities && d.entities[qid] && d.entities[qid].claims;
+    if(!cl) return null;
+    const wert=p=>{ const c=cl[p]; if(!c) return null;
+      for(const k of c){ const v=k.mainsnak && k.mainsnak.datavalue && k.mainsnak.datavalue.value; if(v!=null) return v; }
+      return null; };
+    // Typ: der spezifischste bekannte P31-Wert (Geisterstadt schlägt Stadt)
+    let typ=null;
+    if(cl.P31){
+      const ids=cl.P31.map(k=>k.mainsnak && k.mainsnak.datavalue && k.mainsnak.datavalue.value && k.mainsnak.datavalue.value.id).filter(Boolean);
+      for(const q of WD_TYP_REIHE){ if(ids.indexOf(q)!==-1){ typ=WD_TYP[q]; break; } }
+    }
+    // Einwohner: der jüngste Stand (Qualifier P585 = Stichtag)
+    let pop=null, popZeit="";
+    if(cl.P1082){
+      for(const k of cl.P1082){
+        const v=k.mainsnak && k.mainsnak.datavalue && k.mainsnak.datavalue.value;
+        if(!v || !v.amount) continue;
+        const z=(k.qualifiers && k.qualifiers.P585 && k.qualifiers.P585[0] && k.qualifiers.P585[0].datavalue
+              && k.qualifiers.P585[0].datavalue.value && k.qualifiers.P585[0].datavalue.value.time) || "";
+        if(pop==null || z>popZeit){ pop=Math.round(parseFloat(v.amount)); popZeit=z; }
+      }
+    }
+    let gruendung=null;
+    const g=wert("P571");
+    if(g && g.time){ const j=parseInt(g.time.slice(1,5),10);
+      if(j>0 && j<2100) gruendung=(g.time[0]==="-" ? j+" v. Chr." : String(j)); }
+    let hoehe=null;
+    const h=wert("P2044");
+    if(h && h.amount){ const m=Math.round(parseFloat(h.amount)); if(m>-500 && m<9000) hoehe=m; }
+    let bild=null;
+    const b=wert("P18");
+    if(typeof b==="string") bild="https://commons.wikimedia.org/wiki/Special:FilePath/"+encodeURIComponent(b.replace(/ /g,"_"))+"?width=900";
+    return {typ, pop, gruendung, hoehe, bild};
+  }catch(e){ return null; }
+}
+function fuelleKennung(wd, popTag, eleTag){
+  const box=$("kennung"); box.innerHTML="";
+  const chips=[];
+  const pop=(wd && wd.pop) || popTag;
+  if(pop) chips.push(fmt(pop)+" Menschen");
+  if(wd && wd.gruendung) chips.push("gegründet "+wd.gruendung);
+  const hoehe=(wd && wd.hoehe!=null) ? wd.hoehe : eleTag;
+  if(hoehe!=null) chips.push(fmt(hoehe)+" m Seehöhe");
+  chips.forEach(t=>{ const s=document.createElement("span"); s.className="kMarke"; s.textContent=t; box.appendChild(s); });
+}
+
+/* ---------- Fotos der Gegend (Wikimedia Commons) ---------- */
+const FOTO_MUELL = /karte|map|wappen|coat[_ ]of[_ ]arms|flagge|flag|locator|logo|plan\b|diagram|grafik|chart|siegel|schild|sign\b|orthophoto|orthofoto|luftbild ?karte|\.svg|\.png|\.gif|\.tif/i;
+const SAT_MUELL = /satellit|satellite|sentinel|landsat|copernicus|\biss\b|space station|from space|aus dem (?:all|weltraum)|weltraum|modis|worldview|planet ?labs|maxar|geoeye|quickbird|ikonos|pl[eé]iades|spot [0-9]|\baster\b|earth observation|remote sensing|erdbeobachtung|\besa\b|\bnasa\b|orbital|in orbit/i;
+const NATUR_MAKRO=/\b(insecta?|butterfly|beetle|moth|spider|bee\b|wasp|bug\b|larva|caterpillar|dragonfly|schmetterling|k\u00e4fer|insekt|spinne|libelle|falter|raupe|bl\u00fcte|blume|flower|blossom|plant\b|pflanze|fungus|pilz|moos|lichen|mushroom|leaf\b|blatt\b|flora|fauna|species|weevil|snail|schnecke)\b/i;
+function fotoThema(t){
+  if(/kirche|church|mosque|masjid|moschee|tempel|temple|museum|denkmal|monument|statue|kunst|\bart\b|mural|rathaus|castle|burg|schloss|br\u00fccke|bridge|bahnhof|station/i.test(t)) return "bau";
+  if(/landschaft|landscape|valley|\btal\b|berg|mountain|\bsee\b|lake|fluss|river|strand|beach|wald|forest|feld|panorama|k\u00fcste|coast|h\u00fcgel|hill|w\u00fcste|desert|fjord/i.test(t)) return "land";
+  if(NATUR_MAKRO.test(t)) return "natur";
+  return "sonst";
+}
+function fotoStamm(t){
+  return t.replace(/^File:/,"").toLowerCase().replace(/[0-9]/g,"").replace(/[_\-\.\s]+/g," ").trim().slice(0,16);
+}
+const LUFT=/aerial|luftaufnahme|luftbild|drone|drohne|from the air|aus der luft|airplane|flugzeug|bird'?s.eye|vue a[ée]rienne/i;
+const BODEN=/kirche|church|iglesia|platz|square|plaza|rathaus|town hall|hauptstra|main street|panorama|blick auf|view of|ansicht|centre|center|zentrum|dorf|village|straße|street|markt/i;
+function bewerteFotos(pages, nameBonus, ort){
+  const kandidaten=[];
+  for(const k of Object.keys(pages||{})){
+    const p=pages[k];
+    if(!p.title || !p.imageinfo || !p.imageinfo[0] || !p.imageinfo[0].thumburl) continue;
+    const ii=p.imageinfo[0], em=ii.extmetadata||{};
+    const beschr=((em.ImageDescription && em.ImageDescription.value)||"").replace(/<[^>]*>/g," ");
+    const meta=[p.title, beschr,
+      em.Categories && em.Categories.value,
+      em.Credit && em.Credit.value,
+      em.Artist && em.Artist.value].filter(Boolean).join(" ").replace(/<[^>]*>/g," ");
+    if(FOTO_MUELL.test(p.title) || SAT_MUELL.test(meta)) continue;
+    let w=0;
+    const nm=normTxt(nameBonus);
+    const passtName=nm.length>=3 && (normTxt(p.title).indexOf(nm)!==-1 || normTxt(beschr).indexOf(nm)!==-1);
+    if(passtName) w+=4;
+    // Distanz zum Fundpunkt: nah gewinnt, fern verliert — Nachbarstädte fliegen raus
+    let d=null;
+    if(ort && p.coordinates && p.coordinates[0])
+      d=haversine(ort, {lat:p.coordinates[0].lat, lon:p.coordinates[0].lon});
+    if(d!=null){
+      if(d<=1.5) w+=2; else if(d<=4) w+=1;
+      else if(d>6 && !passtName) w-=3;
+    }
+    if(BODEN.test(p.title+" "+beschr)) w+=1;
+    if(LUFT.test(meta)) w-=3;
+    if(NATUR_MAKRO.test(p.title+" "+beschr)) w-=2;
+    let text=beschr.replace(/\s+/g," ").trim();
+    if(!text || text.length<8) text=p.title.replace(/^File:/,"").replace(/\.[a-z]{3,4}$/i,"").replace(/[_-]+/g," ").trim();
+    if(text.length>90) text=text.slice(0,87)+"\u2026";
+    if(!passtName && d!=null && d>1)
+      text+=" · "+(d<10 ? d.toFixed(1).replace(".",",") : fmt(Math.round(d)))+" km entfernt";
+    kandidaten.push({url:ii.thumburl, text, w, thema:fotoThema(p.title+" "+beschr), stamm:fotoStamm(p.title)});
+  }
+  kandidaten.sort((a,b)=>b.w-a.w || Math.random()-0.5);
+  // Vielfalt: max 1 pro Serie, max 2 pro Thema, max 1 Makro-Natur
+  const staemme={}, themen={}, aus=[];
+  for(const k of kandidaten){
+    if(staemme[k.stamm]) continue;
+    const limit = k.thema==="natur" ? 1 : 2;
+    if((themen[k.thema]||0)>=limit) continue;
+    staemme[k.stamm]=1; themen[k.thema]=(themen[k.thema]||0)+1;
+    aus.push(k);
+    if(aus.length>=8) break;
+  }
+  return aus;
+}
+async function fotoGalerie(ort){
+  const CB="https://commons.wikimedia.org/w/api.php?action=query&format=json&origin=*&";
+  // Stufe 1: Umkreis des Orts — klein für Dörfer, damit keine Nachbarstadt hereinrutscht
+  const radius=/Weiler|Einzelgehöft|Dorf/.test(ort.typ||"") ? 3000
+             : /Kleinstadt|Gemeinde|Vorort|Siedlung/.test(ort.typ||"") ? 6000 : 10000;
+  try{
+    const r=await fetchMitLimit(CB+"generator=geosearch&ggscoord="+ort.lat+"%7C"+ort.lon
+      + "&ggsradius="+radius+"&ggslimit=30&ggsnamespace=6&prop=coordinates%7Cimageinfo&colimit=max&iiprop=url%7Cextmetadata&iiextmetadatalanguage=de&iiurlwidth=900", null, 8000);
+    if(r.ok){
+      const d=await r.json();
+      const kand=bewerteFotos(d && d.query && d.query.pages, ort.name, ort);
+      if(kand.length) return {fotos:kand.slice(0,5), quelle:"Umkreis "+(radius/1000)+" km"};
+    }
+  }catch(e){}
+  // Stufe 2: der Ort hat nichts — die Region zeigt sich, klar gekennzeichnet
+  const region=ort.region || ort.land;
+  if(region){
+    try{
+      const s=await fetchMitLimit(CB+"list=search&srsearch="+encodeURIComponent(region+" "+(ort.land||""))+"&srnamespace=6&srlimit=20", null, 8000);
+      if(s.ok){
+        const ds=await s.json();
+        const titel=(ds && ds.query && ds.query.search || []).map(t=>t.title);
+        if(titel.length){
+          const r2=await fetchMitLimit(CB+"titles="+encodeURIComponent(titel.join("|"))
+            + "&prop=imageinfo&iiprop=url%7Cextmetadata&iiextmetadatalanguage=de&iiurlwidth=900", null, 8000);
+          if(r2.ok){
+            const d2=await r2.json();
+            const kand=bewerteFotos(d2 && d2.query && d2.query.pages, region, null);
+            kand.forEach(f=>{ f.text="Region · "+f.text; });
+            if(kand.length) return {fotos:kand.slice(0,5), quelle:"kein Bild vom Ort — Motive aus "+region};
+          }
+        }
+      }
+    }catch(e){}
+  }
+  return {fotos:[], quelle:""};
+}
+
+/* ---------- Wikipedia: Tiefen-Fakten ---------- */
+async function wikiApi(lang, params){
+  const r=await fetchMitLimit("https://"+lang+".wikipedia.org/w/api.php?format=json&origin=*&action=query&"+params, null, 8000);
+  if(!r.ok) return null;
+  return r.json();
+}
+const ORTSARTIKEL=/ist ein(e)? (stadt|gemeinde|dorf|ort(schaft)?|marktgemeinde|weiler|siedlung|stadtteil|kommune|hauptstadt|landgemeinde|berg|gipfel|vulkan|fluss|see|insel|halbinsel|tal|gletscher|gebirge|hochebene|wüste|höhle|bucht|nationalpark|schutzgebiet)|is a (city|town|village|hamlet|municipality|commune|settlement|community|suburb|census-designated place|locality|district|parish|county seat|capital|mountain|peak|volcano|river|lake|island|peninsula|valley|glacier|range|plateau|desert|cave|bay|national park|protected area)/i;
+const PERSONENARTIKEL=/\(\s*\*?\s*(geboren|born|\d{1,2}\.\s)|war ein(e)? (deutscher|\u00f6sterreichischer|schweizer)?\s*(politiker|schriftsteller|maler|komponist|s\u00e4nger|schauspieler)|was an? (american|british|german|politician|writer|painter|composer|singer|actor|actress|footballer)/i;
+function istOrtsartikel(text){
+  const anfang=(text||"").slice(0,350);
+  if(PERSONENARTIKEL.test(anfang)) return false;
+  return ORTSARTIKEL.test(anfang);
+}
+async function wikiText(ort){
+  if(ort.artikel) return ort.artikel;   // Stufe 3 hat den Artikel schon geholt
+  const istBKL=t=>/steht für:|bezeichnet:|may refer to|can refer to/i.test((t||"").slice(0,200));
+  const passt=titel=>titel.toLowerCase().indexOf(ort.name.toLowerCase())!==-1;
+  let reserve=null;
+  for(const lang of ["de","en"]){
+    try{
+      const g=await wikiApi(lang,"list=geosearch&gscoord="+ort.lat+"%7C"+ort.lon+"&gsradius=10000&gslimit=8");
+      const t=g && g.query && g.query.geosearch;
+      if(!t || !t.length) continue;
+      const treffer=t.find(x=>passt(x.title));
+      if(treffer){
+        const d=await wikiApi(lang,"pageids="+treffer.pageid+"&prop=extracts%7Cpageprops&explaintext=1&ppprop=wikibase_item");
+        const page=d && d.query && d.query.pages && d.query.pages[treffer.pageid];
+        if(page && page.extract && !istBKL(page.extract))
+          return {text:page.extract, titel:treffer.title, fremd:false, qid:(page.pageprops && page.pageprops.wikibase_item)||null};
+      }
+      if(!reserve) reserve={lang, pageid:t[0].pageid, titel:t[0].title};
+    }catch(e){}
+  }
+  for(const lang of ["de","en"]){
+    try{
+      const frage=encodeURIComponent(ort.name+" "+(ort.region||ort.land||""));
+      const s=await wikiApi(lang,"list=search&srsearch="+frage+"&srlimit=4");
+      const treffer=s && s.query && s.query.search;
+      if(!treffer || !treffer.length) continue;
+      for(const kand of treffer){
+        if(!passt(kand.title)) continue;
+        const d=await wikiApi(lang,"pageids="+kand.pageid+"&prop=extracts%7Cpageprops&explaintext=1&ppprop=wikibase_item");
+        const page=d && d.query && d.query.pages && d.query.pages[kand.pageid];
+        if(page && page.extract && !istBKL(page.extract) && istOrtsartikel(page.extract))
+          return {text:page.extract, titel:kand.title, fremd:false, qid:(page.pageprops && page.pageprops.wikibase_item)||null};
+      }
+    }catch(e){}
+  }
+  if(reserve){
+    try{
+      const d=await wikiApi(reserve.lang,"pageids="+reserve.pageid+"&prop=extracts&explaintext=1");
+      const page=d && d.query && d.query.pages && d.query.pages[reserve.pageid];
+      if(page && page.extract && !istBKL(page.extract))
+        return {text:page.extract, titel:reserve.titel, fremd:true};
+    }catch(e){}
+  }
+  // Stufe 4: der Ort selbst schweigt — dann erzählt die Region (eindeutig via "Region Land")
+  const region=ort.region || ort.land;
+  if(region){
+    for(const lang of ["de","en"]){
+      try{
+        const frage=encodeURIComponent(region+" "+(ort.land||""));
+        const s=await wikiApi(lang,"list=search&srsearch="+frage+"&srlimit=3");
+        const treffer=(s && s.query && s.query.search)||[];
+        for(const kand of treffer){
+          if(kand.title.toLowerCase().indexOf(region.toLowerCase())===-1) continue;
+          const d=await wikiApi(lang,"pageids="+kand.pageid+"&prop=extracts&explaintext=1");
+          const page=d && d.query && d.query.pages && d.query.pages[kand.pageid];
+          if(page && page.extract && !istBKL(page.extract) && !PERSONENARTIKEL.test(page.extract.slice(0,350)))
+            return {text:page.extract, titel:kand.title, fremd:true, region:true};
+        }
+      }catch(e){}
+    }
+  }
+  return null;
+}
+function inSaetze(text){
+  const out=[]; const re=/[.!?]["“”»]?\s+(?=[A-ZÄÖÜ0-9„“"])/g; let last=0, m;
+  while((m=re.exec(text))!==null){ out.push(text.slice(last, m.index+1).trim()); last=re.lastIndex; }
+  out.push(text.slice(last).trim());
+  return out.filter(Boolean);
+}
+/* Geschmacksfilter: Erzählung rauf, Verwaltungsprosa runter */
+const ERZAEHLT=/legende|sage\b|angeblich|zerstört|niedergebrannt|brand\b|feuer|verschwund|verschwand|benannt nach|entdeckt|zuletzt|einzige|letzte[rn]?\b|geheim|krieg|pest|seuche|wunder|ermordet|hingerichtet|untergegangen|ruine|schatz|mysteri|spuk|geister|verlassen|aufgegeben|erdbeben|flut|überschwemmung|vulkan|gold|silber|mine\b|pirat|schmuggl|gefängnis|kloster|wallfahrt|hexe|legend|destroyed|burned|abandoned|disappear|myster|haunted|treasure|massacre|plague|earthquake|flood|last remaining|named after|discovered|ghost/i;
+const AMTLICH=/gemeinderat|einwohnerzahl|einwohner\b|fläche von|besteht aus|gliedert sich|ortsteile|katastralgemeinde|census|population of|inhabitants|km²|quadratkilometer|verwaltungs|bürgermeister|gemeindewahl|partei|mandate|liegt im bezirk|zählt \d|amtliche|statistik|volkszählung|postleitzahl|zip code|electoral/i;
+function entklammere(s){
+  // Lautschrift, Aussprache, Referenz-Klammern raus — der Lesefluss gewinnt
+  return s.replace(/\s*\((?:[^()]*(?:IPA|Aussprache|ausgesprochen|pronounced|listen|\/|\u02c8|\u02cc)[^()]*)\)/gi,"")
+          .replace(/\s*\[[0-9]+\]/g,"")
+          .replace(/\s{2,}/g," ").trim();
+}
+function ortsAbsatz(text){
+  if(!text) return "";
+  const MUELL=/^(Weblinks|Einzelnachweise|Literatur|Siehe auch|Quellen|References|External links|Bibliography|See also|Notes|Further reading)/i;
+  const teile=text.split(/\n=+\s*/);
+  // Lage & Landschaft: die ersten brauchbaren Sätze der Einleitung (ohne Statistik)
+  const introAlle=inSaetze(teile[0]||"")
+    .map(s=>entklammere(s.replace(/\s+/g," ").trim()))
+    .filter(s=>s.length>=30 && s.length<=300 && !AMTLICH.test(s));
+  // "X ist eine Gemeinde im Bezirk Y" ist die trockenste Eröffnung der Welt —
+  // sie kommt nur, wenn es sonst nichts gibt
+  const trocken=/^\S[^.]{0,60}\bist ein|^\S[^.]{0,60}\bis a /i;
+  let intro=introAlle.filter(s=>!trocken.test(s) || ERZAEHLT.test(s)).slice(0,1);
+  // Erzählenswertes aus der Tiefe, in Originalreihenfolge
+  let tiefe=[];
+  for(let i=1;i<teile.length;i++){
+    const ab=teile[i], te=ab.indexOf("\n");
+    const titel=te>0 ? ab.slice(0,te).replace(/=+\s*$/,"").trim() : "";
+    if(MUELL.test(titel)) continue;
+    tiefe.push(ab.slice(te+1));
+  }
+  const kandidaten=inSaetze(tiefe.join("\n"))
+    .map((s,idx)=>({s:s.replace(/\s+/g," ").trim(), idx}))
+    .filter(e=>e.s.length>=40 && e.s.length<=280 && !/^\d+\s*$/.test(e.s))
+    .map(e=>{
+      let w=0;
+      if(ERZAEHLT.test(e.s)) w+=2;
+      if(AMTLICH.test(e.s)) w-=2;
+      if(/\b1[0-9]{3}\b|\b20[0-2][0-9]\b/.test(e.s)) w+=1;
+      return {s:e.s, idx:e.idx, w};
+    })
+    .filter(e=>e.w>0)
+    .sort((a,b)=>b.w-a.w)
+    .slice(0,2)
+    .sort((a,b)=>a.idx-b.idx)
+    .map(e=>entklammere(e.s));
+  if(!kandidaten.length && !intro.length) intro=introAlle.slice(0,2);  // Notnagel: lieber trocken als leer
+  // Verdichtet: höchstens zwei Sätze — ein Anker, ein Funke. Mehr trägt kein Erstkontakt.
+  let absatz=intro.concat(kandidaten).slice(0,2).join(" ");
+  if(absatz.length>320) absatz=absatz.slice(0, absatz.lastIndexOf(".", 320)+1) || absatz.slice(0,320);
+  return absatz;
+}
+
+/* ---------- Deutsch, wo moeglich ---------- */
+/* ---------- Die Erzählstimme: Claude formuliert — streng aus den Quellen ---------- */
+async function erzaehleFund(ort, quelle, wd){
+  try{
+    const fakten=["Name: "+ort.name+(ort.typ ? " ("+ort.typ+")" : "")];
+    if(ort.region || ort.land) fakten.push("Lage: "+[ort.region, ort.land].filter(Boolean).join(", "));
+    if(wd && wd.pop) fakten.push("Einwohner: "+wd.pop);
+    const hoehe=(wd && wd.hoehe!=null) ? wd.hoehe : ort.eleTag;
+    if(hoehe!=null) fakten.push("Höhe: "+hoehe+" m");
+    if(wd && wd.gruendung) fakten.push("Gründung: "+wd.gruendung);
+    const auszug=((quelle && quelle.text) || "").slice(0, 2600);
+    const sys="Du schreibst für eine Entdecker-App, die Menschen an zufällige Orte der Welt wirft. "
+      +"Aus dem gelieferten Material schreibst du eine kleine deutsche Beschreibung des Fundes: 2 bis 4 Sätze, "
+      +"lebendig und konkret, das überraschendste belegte Detail zuerst. "
+      +"EISERNE REGEL: ausschließlich Informationen aus dem Material verwenden — nichts erfinden, nichts dazuraten, "
+      +"keine Superlative ohne Beleg, keine Floskeln wie 'malerisch' oder 'idyllisch' ohne Quelle. "
+      +"Ist das Material dünn, schreib weniger, aber wahr. Antworte nur mit dem Fließtext.";
+    const nutzer="FUND:\n"+fakten.join("\n")
+      +((quelle && quelle.fremd) ? "\n\nHINWEIS: Der Auszug beschreibt NICHT den Fund selbst, sondern etwas in der Nähe ("+quelle.titel+") — mach diesen Bezug im Text ausdrücklich klar." : "")
+      +"\n\nQUELLENAUSZUG (Wikipedia):\n"+(auszug || "(kein Auszug vorhanden — nutze nur die FUND-Zeilen)");
+    const r=await fetchMitLimit("/api/anthropic", {
+      method:"POST", headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({model:"claude-sonnet-4-6", max_tokens:400, system:sys,
+        messages:[{role:"user", content:nutzer}]})
+    }, 12000);
+    if(!r.ok) return null;
+    const d=await r.json();
+    const t=(d.content||[]).filter(b=>b.type==="text").map(b=>b.text).join(" ").trim();
+    return (t && t.length>40 && t.length<900) ? t : null;
+  }catch(e){ return null; }
+}
+
+function wirktDeutsch(t){
+  return /[\u00e4\u00f6\u00fc\u00df\u00c4\u00d6\u00dc]/.test(t)
+    || /\b(der|die|das|und|ein|eine|mit|von|im|am|auf|bei|nach|kirche|blick|stra\u00dfe|ansicht|dorf|platz|geb\u00e4ude|haus|see|fluss|berg|markt|rathaus)\b/i.test(t);
+}
+async function nachDeutsch(t){
+  if(!t || t.length<4 || wirktDeutsch(t)) return t;
+  try{
+    const halt=new Promise(r=>setTimeout(()=>r(null), 4000));
+    const antwort=await Promise.race([
+      fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=de&dt=t&q="+encodeURIComponent(t)),
+      halt
+    ]);
+    if(!antwort || !antwort.ok) return t;
+    const d=await antwort.json();
+    const u=(d && d[0] || []).map(x=>x && x[0] || "").join("").trim();
+    return u || t;
+  }catch(e){ return t; }
+}
+
+/* ---------- Strecke: Bilder mit echten Untertiteln, dann Meldungen ---------- */
+function zeigeStrecke(galerie, absatz, ort, quelle, poesie){
+  const fotos=(galerie && galerie.fotos)||[];
+  const box=$("strecke"); box.innerHTML="";
+  if(teleAbbruch) teleAbbruch();
+  let abgebrochen=false;
+  teleAbbruch=()=>{ abgebrochen=true; };
+  const fremdTitel=(quelle && quelle.fremd) ? quelle.titel : null;
+  if(!fotos.length && !absatz && !poesie){
+    let nr=1;
+    try{ nr=parseInt(localStorage.getItem("weltwurf_flecken")||"0")+1; localStorage.setItem("weltwurf_flecken", String(nr)); }catch(e){}
+    box.innerHTML='<div class="kapitel da"><div class="tele"><div class="teleKopf">Weißer Fleck · Fund Nr. '+nr+'</div>'
+      +'<div class="teleText">Kein Foto, keine Schrift — hier war das Archiv noch nie. Nur das Radio weiß von diesem Ort. Sammlerstück.</div></div></div>';
+    $("fotoQuelle").textContent=""; return;
+  }
+  // Kapitel 1: Swipe-Galerie
+  if(fotos.length){
+    const kap=document.createElement("div"); kap.className="kapitel da";
+    const gal=document.createElement("div"); gal.id="galerie";
+    fotos.forEach(f=>{
+      const dia=document.createElement("div"); dia.className="dia";
+      const rahmen=document.createElement("div"); rahmen.className="foto";
+      const img=document.createElement("img"); img.loading="lazy"; img.src=f.url; img.alt=f.text||"";
+      img.onerror=()=>{ dia.remove(); baueP(); };
+      rahmen.appendChild(img); dia.appendChild(rahmen);
+      const t=document.createElement("div"); t.className="diaText"; t.textContent=f.text;
+      dia.appendChild(t); gal.appendChild(dia);
+    });
+    kap.appendChild(gal);
+    const punkte=document.createElement("div"); punkte.id="punkte";
+    kap.appendChild(punkte);
+    function baueP(){
+      punkte.innerHTML="";
+      const n=gal.children.length;
+      if(n<2) return;
+      for(let i=0;i<n;i++) punkte.appendChild(document.createElement("i"));
+      setzeP();
+    }
+    function setzeP(){
+      const n=gal.children.length; if(n<2) return;
+      const i=Math.round(gal.scrollLeft/Math.max(1,gal.clientWidth));
+      Array.prototype.forEach.call(punkte.children,(p,j)=>p.classList.toggle("hier", j===Math.min(i,n-1)));
+    }
+    gal.addEventListener("scroll", ()=>{ requestAnimationFrame(setzeP); }, {passive:true});
+    baueP();
+    box.appendChild(kap);
+    $("fotoQuelle").textContent="Fotos: Wikimedia Commons, "+galerie.quelle;
+  } else {
+    $("fotoQuelle").textContent="";
+  }
+  const tippListe=[];
+  // Kapitel 2: der Ort in wenigen Sätzen
+  if(absatz){
+    const kap=document.createElement("div"); kap.className="kapitel";
+    const d=document.createElement("div"); d.className="tele";
+    const koepfe=["Was hier geschah","Aus dem Archiv","Was man sich erzählt","Notiert über "+ort.name];
+    const kopfText=fremdTitel
+      ? 'Der Ort selbst schweigt — '+((quelle && quelle.region) ? 'aus der Region: ' : 'in der Nähe: ')+fremdTitel
+      : koepfe[Math.floor(Math.random()*koepfe.length)];
+    d.innerHTML='<div class="teleKopf">'+kopfText+'</div>';
+    const txt=document.createElement("div"); txt.className="teleText";
+    d.appendChild(txt); kap.appendChild(d); box.appendChild(kap);
+    tippListe.push({txt, voll:absatz, kap});
+  }
+  // Kapitel 3: Poesie der Gegend (nur bei echtem Fund auf Wikisource)
+  if(poesie){
+    const kap=document.createElement("div"); kap.className="kapitel";
+    const d=document.createElement("div"); d.className="tele";
+    d.innerHTML='<div class="teleKopf">Poesie der Gegend</div>';
+    const txt=document.createElement("div"); txt.className="teleText";
+    d.appendChild(txt);
+    const a=document.createElement("a"); a.className="poesieLink";
+    a.href=poesie.url; a.target="_blank"; a.rel="noopener";
+    a.textContent="Auf Wikisource lesen →";
+    a.style.display="none";
+    d.appendChild(a);
+    kap.appendChild(d); box.appendChild(kap);
+    const voll="„"+poesie.titel+"“"+(poesie.auszug ? " — "+poesie.auszug : "");
+    tippListe.push({txt, voll, kap, danach:()=>{ a.style.display="inline-block"; }});
+  }
+  function tippe(i){
+    if(abgebrochen || i>=tippListe.length) return;
+    const e=tippListe[i];
+    e.kap.classList.add("da");
+    const cur=document.createElement("span"); cur.className="cursor";
+    e.txt.appendChild(cur);
+    let pos=0;
+    const t=setInterval(()=>{
+      if(abgebrochen){ clearInterval(t); return; }
+      pos+=2+(Math.random()<0.3?1:0);
+      e.txt.textContent=e.voll.slice(0,pos);
+      e.txt.appendChild(cur);
+      if(pos>=e.voll.length){
+        clearInterval(t); cur.remove();
+        if(e.danach) e.danach();
+        setTimeout(()=>tippe(i+1), 400);
+      }
+    }, 16);
+  }
+  tippe(0);
+}
+
+/* ---------- Poesie der Gegend (Wikisource, gemeinfrei) ---------- */
+async function poesieFuer(ort){
+  for(const lang of ["de","en"]){
+    try{
+      const basis="https://"+lang+".wikisource.org/w/api.php?format=json&origin=*&action=query&";
+      const r=await fetchMitLimit(basis+"list=search&srsearch="+encodeURIComponent("intitle:"+ort.name)+"&srlimit=5", null, 8000);
+      if(!r.ok) continue;
+      const d=await r.json();
+      const treffer=d && d.query && d.query.search;
+      if(!treffer || !treffer.length) continue;
+      const kand=treffer.find(t=>t.title.toLowerCase().indexOf(ort.name.toLowerCase())!==-1 && t.title.indexOf(":")===-1);
+      if(!kand) continue;
+      let auszug="";
+      try{
+        const e=await fetchMitLimit(basis+"pageids="+kand.pageid+"&prop=extracts&explaintext=1&exchars=220", null, 8000);
+        const de=await e.json();
+        const page=de && de.query && de.query.pages && de.query.pages[kand.pageid];
+        auszug=(page && page.extract || "").replace(/\s+/g," ").trim();
+      }catch(e2){}
+      return {titel:kand.title, auszug,
+        url:"https://"+lang+".wikisource.org/wiki/"+encodeURIComponent(kand.title.replace(/ /g,"_"))};
+    }catch(e){}
+  }
+  return null;
+}
+/* ---------- Senderbeschreibung: ein Satz, nur echte Felder ---------- */
+function senderSatz(s){
+  const teile=[];
+  const wo=s.state || s.country;
+  if(wo) teile.push("aus "+wo);
+  if(s.tags){
+    const t=s.tags.split(",").map(x=>x.trim()).filter(x=>x && x.length<22).slice(0,3);
+    if(t.length) teile.push(t.join(", "));
+  }
+  if(s.language){
+    const l=s.language.split(",")[0].trim();
+    if(l) teile.push(l.charAt(0).toUpperCase()+l.slice(1));
+  }
+  if(s.bitrate) teile.push(s.bitrate+" kbit/s");
+  return teile.join(" · ");
+}
+
+/* ---------- Radio & Funk ---------- */
+const RB_HOSTS=["de1.api.radio-browser.info","de2.api.radio-browser.info","fi1.api.radio-browser.info"];
+async function rbHole(pfad){
+  for(const host of RB_HOSTS){
+    try{
+      const r=await fetchMitLimit("https://"+host+pfad, null, 8000);
+      if(r.ok) return await r.json();
+    }catch(e){}
+  }
+  return null;
+}
+function normTxt(s){ return (s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,""); }
+const ADMIN_WORTE=/^(oblast|region|county|country|province|provinz|kreis|krai|district|distrikt|state|prefecture|governorate|voivodeship|department|departamento|municipality|gemeinde)$/;
+function teiltToken(a,b){
+  // "Oblast Samara" trifft "Samara Oblast" — über den einen Namen, der zählt
+  if(!a||!b) return false;
+  const ta=a.split(/[^a-z0-9]+/).filter(w=>w.length>=5 && !ADMIN_WORTE.test(w));
+  return ta.some(w=>b.indexOf(w)!==-1);
+}
+function regionToken(region){
+  // "Oblast Samara" → "samara": das eine Wort, das die Region wirklich benennt
+  const w=normTxt(region).split(/[^a-z0-9]+/).filter(x=>x.length>=4 && !ADMIN_WORTE.test(x));
+  return w.sort((a,b)=>b.length-a.length)[0]||"";
+}
+async function senderFuer(ort){
+  const enc=encodeURIComponent;
+  const regTok=ort.region ? regionToken(ort.region) : "";
+  const [beiName, beiRegion, gross, zufall, kw]=await Promise.all([
+    rbHole("/json/stations/search?countrycode="+ort.cc+"&name="+enc(ort.name)+"&hidebroken=true&limit=40"),
+    (regTok||ort.region) ? rbHole("/json/stations/search?countrycode="+ort.cc+"&state="+enc(regTok||ort.region)+"&hidebroken=true&limit=80") : Promise.resolve([]),
+    rbHole("/json/stations/search?countrycode="+ort.cc+"&hidebroken=true&limit=300&order=clickcount&reverse=true"),
+    rbHole("/json/stations/search?countrycode="+ort.cc+"&hidebroken=true&limit=300&order=random"),
+    rbHole("/json/stations/search?countrycode="+ort.cc+"&hidebroken=true&limit=20&tag=shortwave")
+  ]);
+  const seen={}, liste=[];
+  for(const s of (beiName||[]).concat(beiRegion||[], gross||[], zufall||[])){
+    if(!s || !s.stationuuid || seen[s.stationuuid]) continue;
+    seen[s.stationuuid]=1; liste.push(s);
+  }
+  if(!liste.length && !(kw||[]).length) return [];
+  const alt=gespielteSender();
+  const frisch=s=>alt.indexOf(s.stationuuid)===-1;
+  const nOrt=normTxt(ort.name), nRegion=normTxt(ort.region);
+  // Bezugs-Stufen: der Sender des Orts schlägt alles — dann Nähe, dann Region, dann Land
+  const stufen={ort:[], nah:[], region:[], land:[]};
+  for(const s of liste){
+    const d=(s.geo_lat!=null && s.geo_long!=null) ? haversine(ort,{lat:s.geo_lat,lon:s.geo_long}) : null;
+    const nName=normTxt(s.name), nState=normTxt(s.state), nTags=normTxt(s.tags);
+    let stufe="land", hinweis="";
+    if(nOrt.length>=3 && (nName.indexOf(nOrt)!==-1 || nState.indexOf(nOrt)!==-1 || nTags.indexOf(nOrt)!==-1)){
+      stufe="ort"; hinweis="sendet in "+ort.name;
+    } else if(d!=null && d<=60){
+      stufe="nah";
+    } else if(nRegion && (teiltToken(nRegion,nState) || teiltToken(nState,nRegion))){
+      stufe="region"; hinweis="aus der Region";
+    }
+    stufen[stufe].push({s, d, kw:false, hinweis});
+  }
+  const nachNaehe=(a,b)=>(a.d==null?1e9:a.d)-(b.d==null?1e9:b.d) || (b.s.clickcount||0)-(a.s.clickcount||0);
+  stufen.ort.sort(nachNaehe); stufen.nah.sort(nachNaehe); stufen.region.sort(nachNaehe);
+  // Land-Ebene: mit Standort nach Nähe — ohne Standort gemischt, sonst käme ewig derselbe Staatssender
+  stufen.land=stufen.land.filter(e=>e.d!=null).sort(nachNaehe)
+    .concat(mische(stufen.land.filter(e=>e.d==null)));
+  const kwListe=mische((kw||[]).filter(s=>frisch(s) && !seen[s.stationuuid])).map(s=>({s, d:null, kw:true, hinweis:"Kurzwelle"}));
+  const geordnet=stufen.ort.concat(stufen.nah, stufen.region);
+  const geordnetFrisch=geordnet.filter(e=>frisch(e.s));
+  const landFrisch=stufen.land.filter(e=>frisch(e.s));
+  const rest=geordnet.concat(stufen.land).filter(e=>!frisch(e.s));
+  return geordnetFrisch.concat(kwListe, landFrisch, rest);
+}
+const FUNK_MUSTER=/scanner|police|fire|rescue|dispatch|air ?traffic|\batc\b|airband|tower|approach|marine|coast ?guard|\bems\b|sheriff|rail/i;
+async function funkFuer(ort){
+  const [a,b]=await Promise.all([
+    rbHole("/json/stations/search?countrycode="+ort.cc+"&hidebroken=true&limit=60&tag=scanner"),
+    rbHole("/json/stations/search?countrycode="+ort.cc+"&hidebroken=true&limit=40&tag=atc")
+  ]);
+  const roh=(a||[]).concat(b||[]);
+  const gesehen={}, treffer=[];
+  for(const s of roh){
+    if(gesehen[s.stationuuid]) continue; gesehen[s.stationuuid]=1;
+    if(!FUNK_MUSTER.test(s.name+" "+(s.tags||""))) continue;
+    treffer.push({s, d:(s.geo_lat!=null && s.geo_long!=null) ? haversine(ort,{lat:s.geo_lat,lon:s.geo_long}) : null});
+  }
+  treffer.sort((x,y)=>(x.d==null?1e9:x.d)-(y.d==null?1e9:y.d));
+  return treffer.slice(0,3);
+}
+function probiereSender(liste, idx, dist, ort, meinWurf){
+  if(meinWurf!==wurfNr) return;
+  if(idx>=Math.min(liste.length,6)){
+    $("radioName").textContent="Kein Sender erreichbar — der Ort bleibt still.";
+    $("radioPunkt").className=""; $("klarHinweis").classList.remove("an"); aetherAus(0.5);
+    return;
+  }
+  const e=liste[idx];
+  const url=e.s.url_resolved||e.s.url;
+  $("radioName").textContent="Suche Frequenz: "+e.s.name+" …";
+  $("radioPunkt").className="sucht";
+  const weiter=()=>probiereSender(liste, idx+1, dist, ort, meinWurf);
+  const t=setTimeout(weiter, 8000);
+  audio.onerror=()=>{ clearTimeout(t); weiter(); };
+  audio.onplaying=()=>{
+    clearTimeout(t);
+    if(meinWurf!==wurfNr) return;
+    reconnects=0;
+    haengeWaechterAn(url, e.s.name, meinWurf);
+    setzeMediaSession(e.s.name, ort);
+    merkeSender(e.s.stationuuid);
+    aktuellesRadio={name:e.s.name, url:url, uuid:e.s.stationuuid, info:senderSatz(e.s)};
+    const istFunk=FUNK_MUSTER.test(e.s.name+" "+(e.s.tags||""));
+    const marke=e.kw ? "KW · " : (istFunk ? "FUNK · " : "");
+    logSender(marke+e.s.name);
+    $("radioName").textContent=marke+"♪ "+e.s.name;
+    $("radioDist").textContent=e.kw ? "Kurzwelle" : (e.d!=null ? fmt(e.d)+" km vom Punkt" : (e.hinweis||""));
+    $("senderInfo").textContent=senderSatz(e.s);
+    spieltJetzt={uuid:e.s.stationuuid, name:e.s.name, url:url, info:senderSatz(e.s)};
+    zeigeFavStern();
+    $("radioPunkt").className="an";
+    $("shazamBtn").classList.add("an");
+    $("klarHinweis").classList.add("an");
+    einrasten(dist);
+  };
+  audio.muted=true; audio.volume=0;
+  audio.src=url;
+  audio.play().catch(()=>{ clearTimeout(t); weiter(); });
+}
+function setzeMediaSession(sender, ort){
+  if(!("mediaSession" in navigator)) return;
+  try{
+    navigator.mediaSession.metadata=new MediaMetadata({
+      title:sender,
+      artist:(ort ? ort.name+" · "+(ort.land||"") : "Weltwurf"),
+      album:"Weltwurf"
+    });
+    navigator.mediaSession.setActionHandler("pause", ()=>audio.pause());
+    navigator.mediaSession.setActionHandler("play", ()=>audio.play());
+  }catch(e){}
+}
+function haengeWaechterAn(url, name, meinWurf){
+  // Streams reißen im Alltag ständig ab — der Empfänger fängt sie selbst wieder ein
+  const aufgeben=()=>{
+    $("radioName").textContent="Frequenz verloren — der Äther hat sie zurückgenommen.";
+    $("radioPunkt").className="";
+    $("shazamBtn").classList.remove("an");
+    $("klarHinweis").classList.remove("an");
+    spieltJetzt=null; zeigeFavStern();
+  };
+  const abriss=()=>{
+    if(meinWurf!==wurfNr || audio.paused) return;
+    if(reconnects>=2){ aufgeben(); return; }
+    reconnects++;
+    $("radioName").textContent="Signal verloren — fange neu ein … ["+reconnects+"]";
+    $("radioPunkt").className="sucht";
+    audio.onplaying=()=>{
+      if(meinWurf!==wurfNr) return;
+      $("radioName").textContent="♪ "+name;
+      $("radioPunkt").className="an";
+      klarstellen();
+      haengeWaechterAn(url, name, meinWurf);
+    };
+    audio.src=url; audio.muted=false; audio.volume=1;
+    audio.play().catch(()=>{ if(meinWurf===wurfNr) aufgeben(); });
+  };
+  const pruefeStillstand=()=>{
+    // "stalled" feuert in Chrome auch grundlos — erst nachsehen, ob wirklich nichts mehr kommt
+    const stand=audio.currentTime;
+    setTimeout(()=>{
+      if(meinWurf!==wurfNr || audio.paused) return;
+      if(audio.currentTime===stand) abriss();
+    }, 3500);
+  };
+  audio.onstalled=pruefeStillstand;
+  audio.onended=abriss;
+  audio.onerror=abriss;
+}
+function spieleDirekt(url, anzeige, distText, meinWurf, uuid, info){
+  if(meinWurf!==wurfNr) return;
+  aetherAn();
+  $("senderInfo").textContent="";
+  $("radioName").textContent="Wechsle Frequenz …";
+  $("radioPunkt").className="sucht";
+  audio.onerror=()=>{ $("radioName").textContent="Frequenz tot — "+anzeige+" schweigt."; $("radioPunkt").className=""; aetherAus(0.5); };
+  audio.onplaying=()=>{
+    if(meinWurf!==wurfNr) return;
+    reconnects=0;
+    haengeWaechterAn(url, anzeige, meinWurf);
+    $("radioName").textContent=anzeige;
+    $("radioDist").textContent=distText||"";
+    $("senderInfo").textContent=info||"";
+    $("radioPunkt").className="an";
+    $("klarHinweis").classList.add("an");
+    spieltJetzt=uuid ? {uuid:uuid, name:anzeige.replace(/^(♪ |FUNK · |Zurück zum Radio: )+/,""), url:url, info:info||""} : null;
+    zeigeFavStern();
+    einrasten(600);
+  };
+  audio.muted=true; audio.volume=0;
+  audio.src=url;
+  audio.play().catch(()=>{ $("radioName").textContent="Frequenz tot."; aetherAus(0.5); });
+}
+function zeigeFunk(funk, radio, meinWurf){
+  const box=$("funkListe"); box.innerHTML="";
+  if(!funk.length){ $("funk").classList.remove("an"); return; }
+  const eintraege=[];
+  if(radio) eintraege.push({name:"♪ Zurück zum Radio: "+radio.name, url:radio.url, dist:"", uuid:radio.uuid, info:radio.info});
+  funk.forEach(e=>{
+    eintraege.push({
+      name:"FUNK · "+e.s.name,
+      url:e.s.url_resolved||e.s.url,
+      dist:e.d!=null ? fmt(e.d)+" km" : "",
+      uuid:e.s.stationuuid,
+      info:senderSatz(e.s)
+    });
+  });
+  eintraege.forEach(e=>{
+    const d=document.createElement("div"); d.className="funkEintrag";
+    d.innerHTML='<span class="fName"></span><span class="fDist">'+e.dist+'</span>';
+    d.querySelector(".fName").textContent=e.name;
+    d.addEventListener("click", ()=>{
+      box.querySelectorAll(".funkEintrag").forEach(x=>x.classList.remove("aktiv"));
+      d.classList.add("aktiv");
+      spieleDirekt(e.url, e.name, e.dist ? e.dist+" vom Punkt" : "", meinWurf, e.uuid, e.info);
+    });
+    alsKnopf(d);
+    box.appendChild(d);
+  });
+  $("funk").classList.add("an");
+}
+
+/* ---------- Das Einfang-Ritual ---------- */
+const MORSE={0:"-----",1:".----",2:"..---",3:"...--",4:"....-",5:".....",6:"-....",7:"--...",8:"---..",9:"----.",N:"-.",S:"...",O:"---",W:".--"," ":" "};
+function sorgeAudioCtx(){
+  if(!actx){
+    const AC=window.AudioContext||window.webkitAudioContext;
+    if(!AC) return;
+    actx=new AC();
+    const puffer=actx.createBuffer(1, actx.sampleRate*2, actx.sampleRate);
+    const d=puffer.getChannelData(0);
+    for(let i=0;i<d.length;i++) d[i]=Math.random()*2-1;
+    const src=actx.createBufferSource(); src.buffer=puffer; src.loop=true;
+    const hp=actx.createBiquadFilter(); hp.type="highpass"; hp.frequency.value=300;
+    const lp=actx.createBiquadFilter(); lp.type="lowpass"; lp.frequency.value=2800;
+    noiseGain=actx.createGain(); noiseGain.gain.value=0;
+    src.connect(hp); hp.connect(lp); lp.connect(noiseGain); noiseGain.connect(actx.destination);
+    src.start();
+    hetOsc=actx.createOscillator(); hetOsc.type="sine"; hetOsc.frequency.value=900;
+    hetGain=actx.createGain(); hetGain.gain.value=0;
+    hetOsc.connect(hetGain); hetGain.connect(actx.destination);
+    hetOsc.start();
+    morseOsc=actx.createOscillator(); morseOsc.type="sine"; morseOsc.frequency.value=620;
+    morseGain=actx.createGain(); morseGain.gain.value=0;
+    morseOsc.connect(morseGain); morseGain.connect(actx.destination);
+    morseOsc.start();
+  }
+  if(actx.state==="suspended") actx.resume();
+}
+function klack(){
+  // mechanisches Klacken — der Daumenstopp bekommt Gewicht
+  if(!actx) return;
+  if(schlafTimer){ clearTimeout(schlafTimer); schlafTimer=null; }
+  if(actx.state==="suspended") actx.resume();
+  const t=actx.currentTime;
+  const puffer=actx.createBuffer(1, actx.sampleRate*0.05, actx.sampleRate);
+  const d=puffer.getChannelData(0);
+  for(let i=0;i<d.length;i++) d[i]=(Math.random()*2-1)*Math.pow(1-i/d.length, 3);
+  const src=actx.createBufferSource(); src.buffer=puffer;
+  const lp=actx.createBiquadFilter(); lp.type="lowpass"; lp.frequency.value=1600;
+  const g=actx.createGain(); g.gain.setValueAtTime(0.4, t);
+  src.connect(lp); lp.connect(g); g.connect(actx.destination);
+  src.start(t);
+}
+function istNacht(){ const st=new Date().getHours(); return st>=20 || st<6; }
+function aetherAn(){
+  if(!actx) return;
+  if(schlafTimer){ clearTimeout(schlafTimer); schlafTimer=null; }
+  if(actx.state==="suspended") actx.resume();
+  const t=actx.currentTime;
+  noiseGain.gain.cancelScheduledValues(t);
+  noiseGain.gain.setTargetAtTime(istNacht()?0.085:0.07, t, 0.6);
+  hetGain.gain.setTargetAtTime(0.012, t, 1.2);
+  let f=400+Math.random()*1200;
+  for(let i=0;i<24;i++){
+    f=Math.max(300, Math.min(1700, f+(Math.random()-0.5)*500));
+    hetOsc.frequency.linearRampToValueAtTime(f, t+0.5+i*0.7);
+  }
+}
+function morseKoordinaten(ort){
+  if(!actx) return;
+  const text=Math.abs(Math.round(ort.lat))+(ort.lat>=0?"N":"S")+" "+Math.abs(Math.round(ort.lon))+(ort.lon>=0?"O":"W");
+  const dit=0.08; let t=actx.currentTime+0.8;
+  for(const z of text){
+    const code=MORSE[z]; if(code===undefined){ t+=dit*3; continue; }
+    if(code===" "){ t+=dit*5; continue; }
+    for(const s of code){
+      const dauer=s==="."?dit:dit*3;
+      morseGain.gain.setValueAtTime(0.035, t);
+      morseGain.gain.setValueAtTime(0, t+dauer);
+      t+=dauer+dit;
+    }
+    t+=dit*2;
+  }
+}
+function klarstellen(){
+  if(fadeTimer){ fadeTimer.forEach(t=>clearTimeout(t)); fadeTimer=null; }
+  if(volRampe){ clearInterval(volRampe); volRampe=null; }
+  if(actx){
+    const t=actx.currentTime;
+    [noiseGain,hetGain,morseGain].forEach(g=>{
+      if(g){ g.gain.cancelScheduledValues(t); g.gain.setValueAtTime(0,t); }
+    });
+  }
+  audio.muted=false;
+  audio.volume=1;
+  $("klarHinweis").classList.remove("an");
+  // Android: laufender AudioContext verzerrt den Stream — also schlafen legen
+  if(schlafTimer){ clearTimeout(schlafTimer); schlafTimer=null; }
+  if(actx && actx.state==="running") actx.suspend();
+}
+function kannLautstaerke(){
+  const alt=audio.volume;
+  audio.volume=0.5;
+  const ok=Math.abs(audio.volume-0.5)<0.01;
+  audio.volume=alt;
+  return ok;
+}
+function einrasten(dist){
+  if(!actx){ audio.muted=false; audio.volume=1; return; }
+  if(actx.state==="suspended") actx.resume();
+  const zeit = 1.2 + 1.3*Math.min(1, dist/12000);   // ein Weg: 1,2–2,5 s je nach Ferne
+  const t=actx.currentTime;
+  noiseGain.gain.cancelScheduledValues(t);
+  noiseGain.gain.setTargetAtTime(0, t+zeit*0.55, zeit*0.16);
+  hetGain.gain.setTargetAtTime(0, t+zeit*0.35, zeit*0.14);
+  if(fadeTimer){ fadeTimer.forEach(x=>clearTimeout(x)); fadeTimer=null; }
+  if(volRampe){ clearInterval(volRampe); volRampe=null; }
+  if(kannLautstaerke()){
+    // Android & Desktop: der Sender tunt weich unter dem Rauschen herein
+    audio.muted=false; audio.volume=0;
+    const start=Date.now(), meineRampe=setInterval(()=>{
+      const x=Math.min(1,(Date.now()-start)/(zeit*1000));
+      audio.volume=x*x;                    // sanfter Anstieg, keine Sprünge
+      if(x>=1){ clearInterval(meineRampe); if(volRampe===meineRampe) volRampe=null; klarstellen(); }
+    }, 100);
+    volRampe=meineRampe;
+  } else {
+    // iOS: Lautstärke gesperrt — Stream tritt bei 60% unter das Rauschen
+    fadeTimer=[
+      setTimeout(()=>{ audio.muted=false; }, zeit*600),
+      setTimeout(()=>{ klarstellen(); }, zeit*1000)
+    ];
+  }
+}
+function aetherAus(dauer){
+  if(!actx) return;
+  const t=actx.currentTime;
+  noiseGain.gain.setTargetAtTime(0, t, dauer||0.4);
+  hetGain.gain.setTargetAtTime(0, t, dauer||0.4);
+  morseGain.gain.cancelScheduledValues(t);
+  morseGain.gain.setValueAtTime(0, t);
+  if(schlafTimer) clearTimeout(schlafTimer);
+  schlafTimer=setTimeout(()=>{ if(actx && actx.state==="running") actx.suspend(); schlafTimer=null; }, ((dauer||0.4)*1000)+800);
+}
+function stoppeEmpfang(){
+  if(fadeTimer){ fadeTimer.forEach(t=>clearTimeout(t)); fadeTimer=null; }
+  if(volRampe){ clearInterval(volRampe); volRampe=null; }
+  audio.onplaying=null; audio.onerror=null; audio.onstalled=null; audio.onended=null;
+  audio.pause(); audio.removeAttribute("src"); audio.load();
+  audio.muted=false; audio.volume=1;
+  $("radioPunkt").className="";
+  $("shazamBtn").classList.remove("an");
+  $("klarHinweis").classList.remove("an");
+  aetherAus(0.2);
+}
+
+/* ---------- Logbuch-Ansicht ---------- */
+let nachtBasis=null;
+function nachtKarte(){
+  // Die Weltkarte einmal zeichnen, dann nur noch stempeln — spart Akku beim Suchlauf
+  if(nachtBasis) return nachtBasis;
+  const c=document.createElement("canvas");
+  c.width=720; c.height=300;   // -60..90 Breite reicht, Antarktis ist leer
+  const ctx=c.getContext("2d");
+  ctx.fillStyle="#0c1117"; ctx.fillRect(0,0,720,300);
+  ctx.fillStyle="#1d2b3a";
+  for(let y=0;y<300;y++){
+    for(let x=0;x<720;x++){
+      const i=y*720+x;
+      if(((LAND[i>>3]>>(i&7))&1)===1) ctx.fillRect(x,y,1,1);
+    }
+  }
+  nachtBasis=c; return c;
+}
+function maleFundkarte(canvas, funde){
+  const ctx=canvas.getContext("2d");
+  canvas.width=720; canvas.height=300;
+  ctx.drawImage(nachtKarte(),0,0);
+  ctx.shadowColor="#59d6c8"; ctx.shadowBlur=6; ctx.fillStyle="#59d6c8";
+  for(const f of funde){
+    if(f.lat==null) continue;
+    const x=Math.round((f.lon+179.75)/0.5), y=Math.round((89.75-f.lat)/0.5);
+    if(y<0||y>=300||x<0||x>=720) continue;
+    ctx.beginPath(); ctx.arc(x,y,2.6,0,Math.PI*2); ctx.fill();
+  }
+  ctx.shadowBlur=0;
+}
+function zeigeLogbuch(){
+  const box=$("logbuch"); box.innerHTML="";
+  const v=besucht().filter(e=>typeof e!=="string").reverse();
+  if(v.length){
+    const karte=document.createElement("canvas");
+    karte.id="fundKarte";
+    maleFundkarte(karte, v);
+    box.appendChild(karte);
+    const laender={}; let km=0;
+    v.forEach(e=>{ if(e.cc) laender[e.cc]=1; km+=e.dist||0; });
+    const kopf=document.createElement("div");
+    kopf.id="logSumme";
+    kopf.textContent=v.length+(v.length===1?" Ort":" Orte")+" · "
+      +Object.keys(laender).length+(Object.keys(laender).length===1?" Land":" Länder")+" · "
+      +fmt(km)+" km gehört";
+    box.appendChild(kopf);
+    // QSL-Marken — Bestätigungen wie im Amateurfunk, still gesammelt
+    const marken=[];
+    if(v.some(e=>e.dist>=15000)) marken.push("DX 15.000 km");
+    if(Object.keys(laender).length>=5) marken.push("5 Länder");
+    if(Object.keys(laender).length>=15) marken.push("15 Länder");
+    if(v.length>=10) marken.push("10 Funde");
+    if(v.length>=25) marken.push("25 Funde");
+    if(v.some(e=>(e.sender||"").indexOf("KW ")===0)) marken.push("Kurzwelle gefangen");
+    if(v.some(e=>(e.sender||"").indexOf("FUNK ")===0)) marken.push("Funkverkehr gehört");
+    const kont={};
+    v.forEach(e=>{
+      if(e.lat==null) return;
+      if(e.lat<15&&e.lat>-56&&e.lon>-82&&e.lon<-34) kont.SA=1;
+      else if(e.lat<37&&e.lat>-35&&e.lon>-18&&e.lon<52) kont.AF=1;
+      else if(e.lat>5&&e.lon>=52&&e.lon<180) kont.AS=1;
+      else if(e.lat>15&&e.lon>-170&&e.lon<=-52) kont.NA=1;
+      else if(e.lat>=37&&e.lon>=-11&&e.lon<52) kont.EU=1;
+      else if(e.lat<=5&&e.lon>=110) kont.OZ=1;
+    });
+    if(Object.keys(kont).length>=5) marken.push("5 Kontinente");
+    try{ if(parseInt(localStorage.getItem("weltwurf_flecken")||"0")>0) marken.push("Weißer Fleck"); }catch(e){}
+    if(marken.length){
+      const q=document.createElement("div"); q.id="qsl";
+      marken.forEach(m=>{ const s=document.createElement("span"); s.className="qslMarke"; s.textContent=m; q.appendChild(s); });
+      box.appendChild(q);
+    }
+  }
+  if(!v.length){
+    box.innerHTML='<div id="logLeer">Noch nichts angespült — wirf zuerst.</div>';
+  } else {
+    v.forEach(e=>{
+      const d=document.createElement("div"); d.className="logEintrag";
+      const meta=[e.typ, e.land, e.datum, fmt(e.dist)+" km", e.sender].filter(Boolean).join(" · ");
+      d.innerHTML='<div class="logName"></div><div class="logMeta"></div>';
+      d.querySelector(".logName").textContent=e.name;
+      d.querySelector(".logMeta").textContent=meta;
+      d.addEventListener("click", ()=>{
+        logZu();
+        lande({name:e.name, typ:e.typ||"", region:e.region||"", land:e.land, cc:e.cc, lat:e.lat, lon:e.lon}, false);
+      });
+      alsKnopf(d);
+      box.appendChild(d);
+    });
+  }
+  // Frequenz-Sammlung: die gesternten Sender, jederzeit abspielbar
+  const favs=favoriten();
+  if(favs.length){
+    const fk=document.createElement("div"); fk.id="favKopf";
+    fk.textContent="Frequenz-Sammlung";
+    box.appendChild(fk);
+    const fb=document.createElement("div"); fb.id="favListe";
+    favs.slice().reverse().forEach(f=>{
+      const d=document.createElement("div"); d.className="favEintrag";
+      d.innerHTML='<span class="fvPlay">▶</span><span class="fvText"><span class="fvName"></span><span class="fvOrt"></span></span><button class="fvWeg" aria-label="Sender entfernen">✕</button>';
+      d.querySelector(".fvName").textContent=f.name;
+      d.querySelector(".fvOrt").textContent=[f.ort, f.land].filter(Boolean).join(", ");
+      d.addEventListener("click", ()=>{
+        const spielt=d.classList.contains("aktiv");
+        fb.querySelectorAll(".favEintrag.aktiv").forEach(x=>{ x.classList.remove("aktiv"); x.querySelector(".fvPlay").textContent="▶"; });
+        stoppeEmpfang();
+        if(spielt) return;                       // zweiter Tipp = stopp
+        d.classList.add("aktiv"); d.querySelector(".fvPlay").textContent="…";
+        audio.onplaying=()=>{ d.querySelector(".fvPlay").textContent="■"; setzeMediaSession(f.name, null); };
+        audio.onerror=()=>{ d.classList.remove("aktiv"); d.querySelector(".fvPlay").textContent="†"; };
+        audio.muted=false; audio.volume=1;
+        audio.src=f.url;
+        audio.play().catch(()=>{ d.classList.remove("aktiv"); d.querySelector(".fvPlay").textContent="†"; });
+      });
+      d.querySelector(".fvWeg").addEventListener("click", ev=>{
+        ev.stopPropagation();
+        favSpeichern(favoriten().filter(x=>x.uuid!==f.uuid));
+        if(d.classList.contains("aktiv")) stoppeEmpfang();
+        d.remove();
+        if(!fb.children.length){ fb.remove(); fk.remove(); }
+      });
+      alsKnopf(d);
+      fb.appendChild(d);
+    });
+    box.appendChild(fb);
+  }
+  $("karte").style.display="none"; tickerAus();
+  if(wurfLaeuft){ wurfLaeuft=false; $("wurfBtn").textContent="Wurf"; }
+  $("intro").style.display="none";
+  box.classList.add("an");
+  $("logBtn").textContent="Schließen";
+}
+function logZu(){
+  $("logbuch").classList.remove("an");
+  $("logBtn").textContent="Logbuch";
+  if(!hatGeworfen && $("karte").style.display!=="block") $("intro").style.display="";
+}
+$("logBtn").addEventListener("click", ()=>{
+  if($("logbuch").classList.contains("an")) logZu();
+  else zeigeLogbuch();
+});
+
+/* ---------- Flaschenpost ---------- */
+$("postBtn").addEventListener("click", async ()=>{
+  if(!aktuellerOrt) return;
+  const o=aktuellerOrt;
+  const text="Weltwurf hat mich nach "+o.name+" geworfen — "+[o.region,o.land].filter(Boolean).join(", ")
+    +"\n"+koordText(o)+" · "+fmt(o.distanz)+" km entfernt"
+    +(aktuellesRadio ? "\nIm Ohr: "+aktuellesRadio.name : "");
+  try{
+    if(navigator.share){ await navigator.share({title:"Weltwurf", text:text}); }
+    else{ await navigator.clipboard.writeText(text); $("postBtn").textContent="In die Zwischenablage gespült";
+          setTimeout(()=>{ $("postBtn").textContent="Flaschenpost — diesen Fund teilen"; }, 2200); }
+  }catch(e){}
+});
+
+/* ---------- Wurfkarte: die Signalbahn vom Hörort zum Fund ---------- */
+function maleWurfKarte(von, nach){
+  const c=$("wurfKarte");
+  const ctx=c.getContext("2d");
+  c.width=720; c.height=300;
+  ctx.drawImage(nachtKarte(),0,0);
+  const px=p=>({x:(p.lon+179.75)/0.5, y:(89.75-p.lat)/0.5});
+  // Großkreis als gepunktete Bahn — so springt ein Signal, nicht mit dem Lineal
+  const r=x=>x*Math.PI/180;
+  const kart=p=>[Math.cos(r(p.lat))*Math.cos(r(p.lon)), Math.cos(r(p.lat))*Math.sin(r(p.lon)), Math.sin(r(p.lat))];
+  const v1=kart(von), v2=kart(nach);
+  const w=Math.acos(Math.min(1,Math.max(-1, v1[0]*v2[0]+v1[1]*v2[1]+v1[2]*v2[2])));
+  if(w>0.001){
+    ctx.fillStyle="rgba(89,214,200,.5)";
+    const n=64, sw=Math.sin(w);
+    for(let i=1;i<n;i+=2){                          // jeder zweite Punkt = Morse-Optik
+      const t=i/n, A=Math.sin((1-t)*w)/sw, B=Math.sin(t*w)/sw;
+      const v=[A*v1[0]+B*v2[0], A*v1[1]+B*v2[1], A*v1[2]+B*v2[2]];
+      const lat=Math.atan2(v[2], Math.hypot(v[0],v[1]))*180/Math.PI;
+      const lon=Math.atan2(v[1], v[0])*180/Math.PI;
+      const q=px({lat,lon});
+      if(q.y>=0 && q.y<300) ctx.fillRect(Math.round(q.x), Math.round(q.y), 2, 1);
+    }
+  }
+  const a=px(von);
+  ctx.fillStyle="#93a9b8";
+  ctx.beginPath(); ctx.arc(a.x, a.y, 2, 0, Math.PI*2); ctx.fill();
+  const b=px(nach);
+  ctx.shadowColor="#59d6c8"; ctx.shadowBlur=9; ctx.fillStyle="#59d6c8";
+  ctx.beginPath(); ctx.arc(b.x, b.y, 3.2, 0, Math.PI*2); ctx.fill();
+  ctx.shadowBlur=0;
+  c.style.display="block";
+}
+
+/* ---------- Ankunft (gemeinsam für Wurf und Logbuch) ---------- */
+async function lande(ort, neu){
+  wurfNr++; const meinWurf=wurfNr;
+  wurfLaeuft=false;
+  const btn=$("wurfBtn");
+  btn.disabled=true; btn.textContent="landet …";
+  stoppeEmpfang();
+  if(teleAbbruch) teleAbbruch();
+  logZu();
+  $("karte").style.display="none";
+  $("radioName").textContent="—"; $("radioDist").textContent=""; $("senderInfo").textContent="";
+  $("strecke").innerHTML=""; $("fotoQuelle").textContent="";
+  $("funk").classList.remove("an"); $("funkListe").innerHTML="";
+  $("postBtn").classList.remove("an");
+  $("wurfKarte").style.display="none";
+  $("ortTyp").classList.remove("da"); $("ortTyp").textContent="";
+  $("ortLand").textContent=""; $("kennung").innerHTML="";
+  $("hoerBtn").classList.remove("an");
+  $("empfang").classList.add("zu");
+  wartenderEmpfang=null;
+  aktuellesRadio=null;
+  spieltJetzt=null; $("favBtn").classList.remove("an");
+
+  if(!hoerer) hoerer=await findeHoerer();
+  $("hoerort").textContent=hoerer.lat.toFixed(2)+"° / "+hoerer.lon.toFixed(2)+"°";
+  const dist=haversine(hoerer, ort);
+  ort.distanz=dist; aktuellerOrt=ort;
+  const wdVersprechen = ort.qid ? wikidataHole(ort.qid) : Promise.resolve(null);
+  if(neu) merkeBesuch(ort, dist);
+  else letzterLogKey=ort.name+"|"+ort.cc;   // Wiederbesuch: Sender am richtigen Eintrag nachtragen
+
+  // Daten sofort anfordern, aber der Reihe nach auftreten lassen
+  const daten=Promise.all([ fotoGalerie(ort), wikiText(ort), senderFuer(ort), funkFuer(ort), poesieFuer(ort) ]);
+
+  // 1. Akt: der Ort gibt sich zu erkennen — Morse allein, das Rauschen gehört zum Tunen
+  sorgeAudioCtx();
+  morseKoordinaten(ort);
+  await pause(900);
+  if(meinWurf!==wurfNr) return;
+  tickerAus();
+  $("ortName").textContent=""; $("ortMeta").innerHTML="";
+  $("karte").style.display="block";
+  await dekodiereName($("ortName"), ort.name);
+  if(meinWurf!==wurfNr) return;
+  $("ortLand").textContent=ort.land||"";
+  $("ortTyp").textContent=ort.typ||"Fund";
+  $("ortTyp").classList.add("da");
+  klack();                                   // der Stempel sitzt
+  if(schlafTimer) clearTimeout(schlafTimer);
+  schlafTimer=setTimeout(()=>{ if(actx && actx.state==="running") actx.suspend(); schlafTimer=null; }, 9000);
+  const ms=(dist/299.792458).toFixed(1);
+  $("ortMeta").innerHTML=koordText(ort)
+    + "<br>"+fmt(dist)+" km — dieses Signal war <b>"+ms+" ms</b> zu dir unterwegs"
+    + (istNacht() ? "<br>Nachtbedingungen — die Ferne trägt" : "");
+  maleWurfKarte(hoerer, ort);
+  $("strecke").innerHTML='<div class="skFoto"></div><div class="skLinie"></div><div class="skLinie"></div><div class="skLinie kurz"></div>';
+  await pause(700);
+  if(meinWurf!==wurfNr) return;
+
+  // 2. Akt: Wikidata sagt, was der Fund IST — der Empfang liegt bereit
+  const [fotos, text, sender, funk, poesie]=await daten;
+  if(meinWurf!==wurfNr) return;
+  let wd=await wdVersprechen;
+  if(!wd && text && !text.fremd && text.qid) wd=await wikidataHole(text.qid);
+  if(meinWurf!==wurfNr) return;
+  let typ=(wd && wd.typ) || ort.typ || null;
+  const anfang=(text && !text.fremd && text.text || "").slice(0,400);
+  if(/geisterstadt|ghost ?town/i.test(anfang)) typ="Geisterstadt";
+  else if(/hafenstadt|port (city|town)/i.test(anfang) && /stadt|gemeinde|ort/i.test(typ||"")) typ="Hafenstadt";
+  else if(!typ){
+    const NATUR_MUSTER=[[/ist ein (schicht|schild)?vulkan|is (an active |a dormant |an extinct |a )?volcano/i,"Vulkan"],
+      [/ist ein berg|is a (mountain|peak)/i,"Berg"],[/ist ein(e)? .{0,12}see\b|is a (lake|reservoir)/i,"See"],
+      [/ist ein fluss|is a river/i,"Fluss"],[/ist eine insel|is an island/i,"Insel"],
+      [/ist ein tal|is a valley/i,"Tal"],[/ist ein gletscher|is a glacier/i,"Gletscher"],
+      [/ist eine wüste|is a desert/i,"Wüste"],[/nationalpark|national park/i,"Nationalpark"]];
+    for(const [re,t] of NATUR_MUSTER){ if(re.test(anfang)){ typ=t; break; } }
+  }
+  typ=typ || "Fund";
+  ort.typ=typ;
+  $("ortTyp").textContent=typ;
+  logTyp(typ);
+  fuelleKennung(wd, ort.popTag, ort.eleTag);
+  wartenderEmpfang={sender, funk, dist, ort, meinWurf};
+  $("hoerBtn").classList.add("an");
+  await pause(600);
+  if(meinWurf!==wurfNr) return;
+
+  // 3. Akt: die Strecke rollt aus — Claude erzählt, die Heuristik ist das Sicherheitsnetz
+  let absatz=await erzaehleFund(ort, text, wd);
+  if(meinWurf!==wurfNr) return;
+  const erzaehlt=!!absatz;
+  if(!absatz) absatz=ortsAbsatz(text && text.text);
+  if(wd && wd.bild && fotos.fotos.every(f=>f.url!==wd.bild)){
+    fotos.fotos.unshift({url:wd.bild, text:"Das Gesicht des Fundes — so zeigt ihn Wikidata"});
+    fotos.fotos=fotos.fotos.slice(0,5);
+  }
+  try{
+    const uebers=await Promise.all(
+      (erzaehlt ? [] : [nachDeutsch(absatz)]).concat(fotos.fotos.map(f=>nachDeutsch(f.text)))
+    );
+    if(!erzaehlt) absatz=uebers.shift();
+    fotos.fotos.forEach((f,i)=>{ f.text=uebers[i]; });
+  }catch(e){}
+  if(meinWurf!==wurfNr) return;
+  if(!erzaehlt && absatz && ort.region) absatz="Liegt in "+ort.region+". "+absatz;
+  zeigeStrecke(fotos, absatz, ort, text, poesie);
+  $("postBtn").classList.add("an");
+  btn.disabled=false; btn.textContent="Noch ein Wurf";
+}
+
+/* ---------- Der Wurf: du hältst selbst an ---------- */
+async function halteAn(){
+  wurfLaeuft=false;
+  klack();
+  const btn=$("wurfBtn"); wurfNr++;
+  const meinWurf=wurfNr;
+  btn.disabled=true; btn.textContent="peilt …";
+  if(tickerTimer){ clearInterval(tickerTimer); tickerTimer=null; }
+  let p=tickerKoord || zufallsLandPunkt();
+  if(navigator.onLine===false){
+    $("tickerZahl").innerHTML=koordFest(p).replace("\n"," &nbsp;·&nbsp; ")+"<small>kein Netz — der Äther braucht eine Verbindung</small>";
+    btn.disabled=false; btn.textContent="Wurf"; return;
+  }
+  // Kein Sprung mehr: der Ticker läuft nur über besiedelte Zellen — was einrastet, bleibt. Wirklich.
+  await tickerRastet(p,"eingerastet");
+  if(meinWurf!==wurfNr) return;
+  // Fund am festen Punkt — die Kaskade findet praktisch immer etwas Benanntes
+  let ort=null;
+  for(let v=1; v<=3 && !ort; v++){
+    try{ ort=await findeFund(p); }catch(e){}
+    if(meinWurf!==wurfNr) return;
+    if(ort) break;
+    $("tickerZahl").innerHTML=koordFest(p).replace("\n","<br>")+"<small>peile … ["+v+"]</small>";
+    p={lat:p.lat+(Math.random()-0.5)*0.08, lon:p.lon+(Math.random()-0.5)*0.08};
+    await pause(1100);
+    if(meinWurf!==wurfNr) return;
+  }
+  if(!ort){
+    $("tickerZahl").innerHTML=koordFest(p).replace("\n","<br>")+"<small>Peilung gestört — gleich nochmal</small>";
+    btn.disabled=false; btn.textContent="Wurf"; return;
+  }
+  const neu = besuchtKeys().indexOf(ort.name+"|"+ort.cc)===-1;
+  await lande(ort, neu);
+}
+function wurfStart(){
+  hatGeworfen=true;
+  $("wurfBtn").classList.remove("lockt");
+  $("intro").style.display="none";
+  sorgeAudioCtx();
+  wurfNr++;
+  wurfLaeuft=true;
+  stoppeEmpfang();
+  logZu();
+  $("karte").style.display="none";
+  const btn=$("wurfBtn");
+  btn.disabled=false; btn.textContent="Anhalten";
+  tickerStart();
+}
+alsKnopf($("wissenBtn"));
+$("wissenBtn").addEventListener("click", ()=>{
+  const w=$("wissen"); w.classList.toggle("an");
+  if(w.classList.contains("an")) w.scrollIntoView({behavior:"smooth", block:"nearest"});
+});
+
+/* ---------- Tag & Nacht: die Optik folgt der Uhr ---------- */
+(function(){
+  const setze=()=>{
+    const n=istNacht();
+    document.documentElement.dataset.modus = n ? "nacht" : "tag";
+    const m=document.querySelector('meta[name="theme-color"]');
+    if(m) m.content = n ? "#0c1117" : "#efe6d3";
+  };
+  setze();
+  setInterval(setze, 60000);
+})();
+
+$("wurfBtn").addEventListener("click", ()=>{
+  if(wurfLaeuft) halteAn();
+  else wurfStart();
+});
+$("ticker").addEventListener("click", ()=>{ if(wurfLaeuft) halteAn(); });
+$("favBtn").addEventListener("click", ev=>{
+  ev.stopPropagation();   // Zeilen-Klick = klarstellen — der Stern soll nur sammeln
+  if(!spieltJetzt || !spieltJetzt.uuid) return;
+  let v=favoriten();
+  if(istFav(spieltJetzt.uuid)) v=v.filter(f=>f.uuid!==spieltJetzt.uuid);
+  else v.push({uuid:spieltJetzt.uuid, name:spieltJetzt.name, url:spieltJetzt.url, info:spieltJetzt.info||"",
+               ort:aktuellerOrt?aktuellerOrt.name:"", land:aktuellerOrt?(aktuellerOrt.land||""):"",
+               datum:new Date().toISOString().slice(0,10)});
+  favSpeichern(v);
+  zeigeFavStern();
+});
+$("hoerBtn").addEventListener("click", ()=>{
+  const w=wartenderEmpfang;
+  if(!w || w.meinWurf!==wurfNr) return;
+  $("hoerBtn").classList.remove("an");
+  $("empfang").classList.remove("zu");
+  sorgeAudioCtx(); aetherAn();
+  if(w.sender.length) probiereSender(w.sender, 0, w.dist, w.ort, w.meinWurf);
+  else { $("radioName").textContent="Kein Sender in "+(w.ort.land||"diesem Land")+"."; aetherAus(1.2); }
+  zeigeFunk(w.funk, null, w.meinWurf);
+  if(w.funk.length){
+    const warte=setInterval(()=>{
+      if(w.meinWurf!==wurfNr){ clearInterval(warte); return; }
+      if(aktuellesRadio){ clearInterval(warte); zeigeFunk(w.funk, aktuellesRadio, w.meinWurf); }
+    }, 500);
+    setTimeout(()=>clearInterval(warte), 30000);
+  }
+});
+$("radioZeile").addEventListener("click", ()=>{
+  if(!audio.paused && audio.src) klarstellen();
+});
+$("shazamBtn").addEventListener("click", (ev)=>{
+  ev.preventDefault();
+  klarstellen();                       // Signal sauber, Radio läuft weiter
+  if(/android/i.test(navigator.userAgent)){
+    // Android: Intent-URL öffnet die Shazam-App, Play Store als Rückfall
+    window.location.href="intent://tag#Intent;scheme=shazam;package=com.shazam.android;"
+      +"S.browser_fallback_url="+encodeURIComponent("https://play.google.com/store/apps/details?id=com.shazam.android")+";end";
+  } else {
+    window.location.href="shazam://tag";
+    setTimeout(()=>{ if(!document.hidden) window.location.href="shazam://"; }, 1500);
+  }
+});
+</script>
+</body>
+</html>
