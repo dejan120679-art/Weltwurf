@@ -927,7 +927,7 @@ async function erzaehleFund(ort, quelle, wd){
       +"\n\nQUELLENAUSZUG (Wikipedia):\n"+(auszug || "(kein Auszug vorhanden — nutze nur die FUND-Zeilen)");
     const r=await fetchMitLimit("/api/anthropic", {
       method:"POST", headers:{"Content-Type":"application/json"},
-      body:JSON.stringify({model:"claude-sonnet-4-6", max_tokens:400, system:sys,
+      body:JSON.stringify({model:"claude-sonnet-5", max_tokens:400, system:sys,
         messages:[{role:"user", content:nutzer}]})
     }, 12000);
     if(!r.ok) return null;
