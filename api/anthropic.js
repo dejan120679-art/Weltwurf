@@ -1,5 +1,4 @@
-// Weltwurf — Anthropic-Proxy (Muster: klangsaat-app/api/anthropic.js)
-// Der API-Schlüssel bleibt auf dem Server: Vercel-Umgebungsvariable ANTHROPIC_API_KEY
+// Weltwurf — Anthropic-Proxy. Schluessel bleibt serverseitig: ENV ANTHROPIC_API_KEY
 export default async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
@@ -19,6 +18,6 @@ export default async function handler(req, res) {
     const data = await r.json();
     return res.status(r.status).json(data);
   } catch (e) {
-    return res.status(500).json({ error: "Proxy-Fehler", details: String(e) });
+    return res.status(502).json({ error: "proxy error" });
   }
 }
