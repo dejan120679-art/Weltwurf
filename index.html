@@ -1327,13 +1327,15 @@ async function gartenSender(ort){
     const content=(dd && dd.data && dd.data.content) || [];
     for(const block of content){
       for(const it of (block.items||[])){
-        const href=(it.href||"")+" "+((it.page && it.page.url)||"");
-        const mm=/listen\/([A-Za-z0-9_-]+)/.exec(href);
+        const pg=it.page||{};
+        const purl=pg.url||it.href||"";
+        // Kanal-ID ist das LETZTE Segment von /listen/<slug>/<id>
+        const mm=/\/listen\/[^\/]+\/([A-Za-z0-9_-]+)/.exec(purl);
         if(!mm) continue;
         const cid=mm[1];
         const url="https://radio.garden/api/ara/content/listen/"+cid+"/channel.mp3";
         out.push({
-          s:{ name:(it.title||"Radio"), url_resolved:url, url:url,
+          s:{ name:(pg.title||it.title||"Radio"), url_resolved:url, url:url,
               stationuuid:"garten_"+cid, state:p.title, country:p.country,
               tags:"", language:"", bitrate:0, geo_lat:p.lat, geo_long:p.lon, clickcount:0, votes:0 },
           d:d, kw:false,
