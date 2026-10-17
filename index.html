@@ -1317,7 +1317,7 @@ async function gartenSender(ort){
   const out=[];
   for(const eintrag of nahe){
     const p=eintrag.p, d=eintrag.d;
-    if(d>400) break;
+    if(d>600) break;   // naechste echte Sendestadt bis 600 km zulassen, ehrlich als 'fern' beschriftet
     let dd=null;
     try{
       const r=await fetchMitLimit("/api/garden?u="+encodeURIComponent("https://radio.garden/api/ara/content/page/"+p.id+"/channels"), null, 10000);
