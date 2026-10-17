@@ -1430,6 +1430,13 @@ async function funkFuer(ort){
   treffer.sort((x,y)=>(x.d==null?1e9:x.d)-(y.d==null?1e9:y.d));
   return treffer.slice(0,3);
 }
+function sichereStreamUrl(s){
+  // HTTPS-Seite darf keine HTTP-Streams abspielen (Mixed Content) -> https bevorzugen, sonst anheben
+  const a=s.url_resolved||"", b=s.url||"";
+  if(/^https:\/\//i.test(a)) return a;
+  if(/^https:\/\//i.test(b)) return b;
+  return (a||b).replace(/^http:\/\//i,"https://");
+}
 function probiereSender(liste, idx, dist, ort, meinWurf){
   if(meinWurf!==wurfNr) return;
   if(idx>=Math.min(liste.length,6)){
@@ -1438,7 +1445,7 @@ function probiereSender(liste, idx, dist, ort, meinWurf){
     return;
   }
   const e=liste[idx];
-  const url=e.s.url_resolved||e.s.url;
+  const url=sichereStreamUrl(e.s);
   $("radioName").textContent="Suche Frequenz: "+e.s.name+" …";
   $("radioPunkt").className="sucht";
   const weiter=()=>probiereSender(liste, idx+1, dist, ort, meinWurf);
